@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>브레인시티 푸르지오 119㎡</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="브레인시티 푸르지오 전용 119㎡ 선착순 분양. 계약금 5%, 중도금 이자후불제, 계약축하금. 분양 상담 1668-4270">
+<meta property="og:title" content="브레인시티 푸르지오 · 전용 119㎡ 선착순 분양">
+<meta property="og:description" content="계약금 5% · 중도금 이자후불제 · 계약축하금 지급 · 2028년 4월 입주 예정">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap">
+
+<!-- ===== 운영 설정: 배포 전 이 블록만 채우면 됩니다 ===== -->
+<script>
+window.SITE = {
+  PIXEL_ID: "",          // Meta 데이터세트(픽셀) ID. 예: 1222145406526721 (싸이다분양)
+  WEBHOOK_URL: "https://hook.eu2.make.com/mebhdg79kghkoxuxttg2akjc4hkv7b3e", // Make 웹훅 (비우면 데모 모드)
+  PHONE: "1668-4270",
+  SITE_ID: "brain-prugio-119"
+};
+</script>
+<!-- Meta Pixel -->
+<script>
+if (window.SITE.PIXEL_ID) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', window.SITE.PIXEL_ID);
+  fbq('track', 'PageView');
+}
+</script>
+
+<style>
+/* 레이아웃: 그린 밴드와 아이보리 지면이 번갈아 나오는 한 줄 세로 흐름, 모바일 우선 · 하단 고정 상담 바 (광고 카드뉴스와 같은 브랜드 그린 × 샴페인 골드) */
+:root{
+  --green:#074F51; --green-deep:#05393B; --ink:#0B2B2C;
+  --ivory:#F6F3EC; --stone:#E3DDCF; --paper:#FFFFFF;
+  --gold:#C9B28A; --gold-deep:#8E7650;
+  --mute:#56645F; --mute-dark:rgba(255,255,255,.74);
+  --err:#B3261E;
+  --serif:"Noto Serif KR","Apple SD Gothic Neo","Malgun Gothic",serif;
+  --sans:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 16px/1.65 var(--sans);word-break:keep-all;-webkit-font-smoothing:antialiased;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:640px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:56px}
+.band{background:var(--green);color:#fff}
+.band.deep{background:var(--green-deep)}
+.eyebrow{font:500 13px/1 var(--sans);letter-spacing:.16em;color:var(--gold-deep);display:flex;align-items:center;gap:10px;margin:0 0 14px}
+.eyebrow::before{content:"";width:22px;height:1.5px;background:currentColor}
+.band .eyebrow{color:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:700;letter-spacing:-.03em;line-height:1.28;margin:0;text-wrap:balance}
+h2{font-size:clamp(26px,7vw,34px)}
+.lead{margin:12px 0 0;color:var(--mute);font-size:16px}
+.band .lead{color:var(--mute-dark)}
+.note{font-size:12px;line-height:1.55;color:var(--mute);margin:18px 0 0}
+.band .note{color:rgba(255,255,255,.6)}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 22px;border-radius:6px;border:0;font:700 17px/1 var(--sans);text-decoration:none;cursor:pointer;letter-spacing:-.01em}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-green{background:var(--green);color:#fff}
+.btn-line{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+.btn:active{transform:translateY(1px)}
+
+/* 히어로 */
+.hero{position:relative;background:var(--green-deep);color:#fff;padding:0;overflow:hidden}
+.hero .bg{position:absolute;inset:0 0 auto 0;width:100%;height:62%;object-fit:cover;object-position:50% 30%}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,57,59,.5) 0%,rgba(5,57,59,0) 14%,rgba(5,57,59,0) 34%,rgba(5,57,59,.9) 50%,var(--green-deep) 60%)}
+.hero .wrap{position:relative;padding-block:22px 40px;display:flex;flex-direction:column;min-height:min(980px,215vw)}
+.hero .logo{height:22px;width:auto}
+.hero .top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.hero .top a{font:700 15px/1 var(--sans);text-decoration:none;color:#fff;padding:10px 12px;border:1px solid rgba(255,255,255,.45);border-radius:999px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.hero .copy{margin-top:auto;display:flex;flex-direction:column;gap:16px}
+.status{align-self:flex-start;font:700 13px/1 var(--sans);background:var(--gold);color:var(--ink);padding:8px 12px;border-radius:999px}
+.hero h1{font-size:clamp(34px,10vw,48px);line-height:1.2}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .sub{margin:0;font-size:17px;color:var(--mute-dark)}
+.terms{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.22);border-bottom:1px solid rgba(255,255,255,.22)}
+.terms li{padding:14px 6px;text-align:center;display:flex;flex-direction:column;gap:4px;min-width:0}
+.terms li+li{border-left:1px solid rgba(255,255,255,.22)}
+.terms b{font:700 19px/1.15 var(--serif);color:var(--gold)}
+.terms span{font-size:12.5px;color:var(--mute-dark);line-height:1.35}
+.hero .ctas{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.hero .meta{font-size:12px;color:rgba(255,255,255,.55);margin:0}
+
+/* 잔여 타입 */
+.types{display:flex;flex-direction:column;gap:10px;margin-top:26px}
+.type{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border:1.5px solid var(--stone);border-radius:6px;background:var(--paper)}
+.type .t{display:flex;align-items:baseline;gap:12px}
+.type .t strong{font:700 24px/1 var(--serif)}
+.type .t span{color:var(--mute);font-size:15px}
+.type .st{font:700 14px/1 var(--sans);color:#8C9592}
+.type.done{background:transparent}
+.type.done strong{color:#97A09C;text-decoration:line-through;text-decoration-color:#B8BFBB}
+.type.live{background:var(--green);border-color:var(--green);color:#fff;padding:24px 20px}
+.type.live .t strong{font-size:32px}
+.type.live .t span{color:var(--mute-dark)}
+.type.live .st{background:var(--gold);color:var(--ink);padding:9px 12px;border-radius:999px}
+.share{margin-top:30px;display:flex;flex-direction:column;gap:12px}
+.bar{display:grid;grid-template-columns:84px 1fr 52px;align-items:center;gap:12px;font-size:14px;color:var(--mute)}
+.bar .track{height:14px;background:var(--stone);border-radius:2px;position:relative;overflow:hidden}
+.bar .fill{position:absolute;inset:0 auto 0 0;background:#B9C2BE}
+.bar .v{text-align:right;font:700 15px/1 var(--serif);color:var(--ink);font-variant-numeric:tabular-nums}
+.bar.hl{color:var(--green);font-weight:700}
+.bar.hl .fill{background:var(--gold)}
+.bar.hl .v{color:var(--gold-deep)}
+.callout{margin:22px 0 0;padding-top:18px;border-top:1px solid var(--stone);font-size:17px;line-height:1.6}
+.callout b{color:var(--green)}
+
+/* 분양 조건 */
+.big{display:flex;align-items:flex-end;gap:16px;margin-top:26px;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.22)}
+.big .n{font:500 96px/.82 var(--serif);color:var(--gold);letter-spacing:-.05em}
+.big .n sup{font-size:44px;vertical-align:top;margin-left:2px}
+.big .c{display:flex;flex-direction:column;gap:4px;padding-bottom:4px}
+.big .c strong{font:700 21px/1.2 var(--sans)}
+.big .c span{font-size:14px;color:var(--mute-dark)}
+.conds{list-style:none;margin:0;padding:0}
+.conds li{display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.13);font:700 18px/1.35 var(--sans)}
+.conds li small{display:block;font:400 13px/1.4 var(--sans);color:var(--mute-dark);margin-top:3px}
+.ck{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--gold);position:relative}
+.ck::after{content:"";position:absolute;left:8px;top:6px;width:8px;height:5px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg)}
+.dates{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.dates div{display:flex;flex-direction:column;gap:4px}
+.dates strong{font:700 22px/1.15 var(--serif);color:var(--gold);font-variant-numeric:tabular-nums}
+.dates span{font-size:13.5px;color:var(--mute-dark)}
+.inline-cta{margin-top:28px}
+
+/* 평면 */
+.plan{margin-top:24px;background:var(--paper);border:1px solid var(--stone);border-radius:6px;padding:14px}
+.plan img{width:100%;height:auto}
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.spec{display:flex;flex-direction:column;gap:4px;min-width:0}
+.spec span{font-size:12.5px;color:var(--mute)}
+.spec strong{font:700 17px/1.25 var(--serif);color:var(--green);font-variant-numeric:tabular-nums}
+.feat{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.feat li{font:500 14px/1 var(--sans);padding:10px 13px;border:1px solid var(--stone);border-radius:999px;background:var(--paper)}
+
+/* 갤러리 */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:24px}
+.gal figure{margin:0;position:relative;overflow:hidden;border-radius:4px;background:var(--stone)}
+.gal figure.wide{grid-column:1/-1}
+.gal img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.gal figcaption{position:absolute;left:0;bottom:0;background:rgba(11,43,44,.82);color:#fff;font:500 12.5px/1 var(--sans);padding:7px 10px}
+
+/* 커뮤니티 · 입지 */
+.photo{margin-top:24px;border-radius:4px;overflow:hidden}
+.photo img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font:500 14px/1 var(--sans);padding:10px 13px;border:1px solid rgba(255,255,255,.32);border-radius:999px}
+.chip.k{border-color:var(--gold);color:var(--gold);font-weight:700}
+.loc{margin:24px 0 0;padding:0;list-style:none}
+.loc li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:16px 0;border-top:1px solid var(--stone);align-items:baseline}
+.loc li:last-child{border-bottom:1px solid var(--stone)}
+.loc b{font:700 14px/1.3 var(--sans);color:var(--gold-deep);letter-spacing:.04em}
+.loc span{font-size:16px;line-height:1.5}
+.tag{display:inline-block;font:500 11.5px/1 var(--sans);color:var(--mute);border:1px solid var(--stone);border-radius:3px;padding:3px 5px;margin-left:4px;vertical-align:2px}
+
+/* 단지 개요 */
+.facts{display:grid;grid-template-columns:1fr 1fr;margin-top:24px;border-top:1px solid var(--stone)}
+.fact{padding:18px 14px 18px 0;border-bottom:1px solid var(--stone);display:flex;flex-direction:column;gap:4px;min-width:0}
+.fact:nth-child(even){padding-left:16px;border-left:1px solid var(--stone)}
+.fact span{font-size:12.5px;color:var(--mute)}
+.fact strong{font:700 18px/1.3 var(--serif);color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* FAQ */
+.faq{margin-top:20px;display:flex;flex-direction:column}
+.faq details{border-bottom:1px solid var(--stone)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 34px 18px 0;font:700 16.5px/1.45 var(--sans);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:24px;width:9px;height:9px;border-right:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(-135deg);top:28px}
+.faq p{margin:0 0 18px;color:var(--mute);font-size:15.5px}
+
+/* 상담 폼 */
+.form-sec{background:var(--green-deep);color:#fff}
+.gets{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gets li{background:rgba(255,255,255,.07);border-radius:4px;padding:12px;font:500 14px/1.4 var(--sans);display:flex;gap:8px;align-items:flex-start}
+.gets li b{color:var(--gold);font-family:var(--serif)}
+form{margin-top:26px;background:var(--paper);color:var(--ink);border-radius:8px;padding:22px 18px;display:flex;flex-direction:column;gap:18px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field>label,.field>.lbl{font:700 14.5px/1.3 var(--sans)}
+.field .req{color:var(--gold-deep);margin-left:3px}
+input[type=text],input[type=tel],input[type=date],select{width:100%;min-height:52px;padding:0 14px;border:1.5px solid var(--stone);border-radius:6px;background:#fff;color:var(--ink);font:500 16px/1 var(--sans);appearance:none;-webkit-appearance:none}
+select{background-image:linear-gradient(45deg,transparent 50%,var(--green) 50%),linear-gradient(135deg,var(--green) 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat;padding-right:38px}
+input:focus,select:focus{border-color:var(--green);outline:none;box-shadow:0 0 0 3px rgba(7,79,81,.15)}
+.field.bad input,.field.bad select{border-color:var(--err)}
+.msg{font-size:13px;color:var(--err);min-height:0}
+.msg:empty{display:none}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:58px;border:1.5px solid var(--stone);border-radius:6px;font:700 15px/1.2 var(--sans);cursor:pointer;text-align:center;padding:8px}
+.seg label small{font:400 12px/1.2 var(--sans);color:var(--mute)}
+.seg input:checked+label{border-color:var(--green);background:var(--green);color:#fff}
+.seg input:checked+label small{color:var(--mute-dark)}
+.seg input:focus-visible+label{outline:3px solid var(--gold);outline-offset:2px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.consent{display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--stone);padding-top:14px}
+.chk{display:flex;align-items:flex-start;gap:10px;padding:8px 0;font-size:14.5px;line-height:1.45;cursor:pointer}
+.chk input{flex:none;width:22px;height:22px;margin:0;accent-color:var(--green)}
+.chk.all{font-weight:700;font-size:15.5px}
+.chk .view{margin-left:auto;flex:none;background:none;border:0;color:var(--mute);font:500 13px/1.45 var(--sans);text-decoration:underline;cursor:pointer;padding:0 0 0 8px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.submit{min-height:58px;font-size:18px}
+.submit[disabled]{opacity:.6;cursor:wait}
+.form-foot{font-size:12.5px;color:var(--mute);margin:0;text-align:center}
+.done{background:var(--paper);color:var(--ink);border-radius:8px;padding:30px 20px;margin-top:26px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.done h3{font-size:24px}
+.done p{margin:0;color:var(--mute)}
+.done .num{font:700 30px/1 var(--serif);color:var(--green);font-variant-numeric:tabular-nums;user-select:all}
+
+/* 정책 모달 */
+dialog{border:0;border-radius:10px;padding:0;width:min(560px,calc(100% - 32px));max-height:80vh;color:var(--ink);background:var(--paper)}
+dialog::backdrop{background:rgba(5,57,59,.6)}
+dialog .in{padding:22px 20px;overflow:auto;max-height:calc(80vh - 64px);font-size:14px;line-height:1.65}
+dialog h3{font-size:19px;margin-bottom:10px}
+dialog table{width:100%;border-collapse:collapse;font-size:13.5px;margin:10px 0}
+dialog th,dialog td{border:1px solid var(--stone);padding:8px;text-align:left;vertical-align:top}
+dialog th{background:var(--ivory);width:32%}
+dialog .x{display:block;width:100%;min-height:52px;border:0;border-top:1px solid var(--stone);background:var(--ivory);font:700 16px/1 var(--sans);color:var(--green);cursor:pointer}
+
+/* 푸터 · 하단 고정 바 */
+footer{background:var(--ink);color:rgba(255,255,255,.62);font-size:12.5px;line-height:1.7}
+footer .wrap{padding-block:34px 30px;display:flex;flex-direction:column;gap:12px}
+footer img{height:18px;width:auto;opacity:.85}
+footer b{color:#fff}
+footer button{background:none;border:0;color:#fff;text-decoration:underline;font:inherit;padding:0;cursor:pointer}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(5,57,59,.97);backdrop-filter:blur(6px);padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+.dock .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:1fr 1.4fr;gap:8px}
+.dock .btn{min-height:54px;font-size:16px}
+.dock .tel small{display:block;font:500 11px/1 var(--sans);opacity:.75;margin-bottom:4px}
+.dock .tel{flex-direction:column;gap:0;line-height:1.1;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+
+<!-- 1. 히어로 -->
+<header class="hero">
+  <img class="bg" src="img/hero.jpg" alt="브레인시티 푸르지오 투시도" fetchpriority="high">
+  <div class="shade"></div>
+  <div class="wrap">
+    <div class="top">
+      <img class="logo" src="img/logo-white.png" alt="PRUGIO 푸르지오">
+      <a href="tel:16684270" data-ev="call" data-pos="hero_top">☎ 1668-4270</a>
+    </div>
+    <div class="copy">
+      <span class="status">전용 119㎡ 선착순 분양 중</span>
+      <h1>브레인시티에서<br><em>48평</em>은<br>여기뿐입니다</h1>
+      <p class="sub">25평·34평은 마감. 지금은 119㎡ 하나만 남았습니다.</p>
+      <ul class="terms">
+        <li><b>5%</b><span>계약금</span></li>
+        <li><b>이자후불</b><span>중도금</span></li>
+        <li><b>축하금</b><span>계약 시 지급</span></li>
+      </ul>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#apply" data-ev="cta" data-pos="hero">상담 신청</a>
+        <a class="btn btn-line" href="#apply" data-ev="cta_visit" data-pos="hero">방문 예약</a>
+      </div>
+      <p class="meta">1,990세대 · 2028년 4월 입주 예정 · ※ 투시도는 이해를 돕기 위한 CG로 실제와 다를 수 있습니다.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- 2. 잔여 타입 · 희소성 -->
+<section id="types">
+  <div class="wrap">
+    <p class="eyebrow">지금 계약 가능한 타입</p>
+    <h2>25평, 34평은<br>이미 끝났습니다</h2>
+    <div class="types">
+      <div class="type done"><div class="t"><strong>59㎡</strong><span>25평</span></div><span class="st">마감</span></div>
+      <div class="type done"><div class="t"><strong>84㎡</strong><span>34평</span></div><span class="st">마감</span></div>
+      <div class="type live"><div class="t"><strong>119㎡</strong><span>48평</span></div><span class="st">선착순 분양 중</span></div>
+    </div>
+    <div class="share" aria-label="브레인시티 아파트 평형별 공급 비율">
+      <div class="bar"><span>30평 미만</span><span class="track"><i class="fill" style="width:21.6%"></i></span><span class="v">21.6%</span></div>
+      <div class="bar"><span>30~40평</span><span class="track"><i class="fill" style="width:70.4%"></i></span><span class="v">70.4%</span></div>
+      <div class="bar hl"><span>40평 이상</span><span class="track"><i class="fill" style="width:8%"></i></span><span class="v">8.0%</span></div>
+    </div>
+    <p class="callout">브레인시티 아파트 중 40평 이상은 <b>8.0%</b>. 그 대형 평형이 브레인시티 푸르지오 119㎡입니다.</p>
+    <p class="note">평형별 공급 비율: 브레인시티 푸르지오 분양 가이드북(2024) 기준</p>
+  </div>
+</section>
+
+<!-- 3. 분양 조건 -->
+<section class="band" id="terms">
+  <div class="wrap">
+    <p class="eyebrow">분양 조건</p>
+    <h2>48평을 가볍게<br>시작하는 조건</h2>
+    <div class="big"><span class="n">5<sup>%</sup></span><div class="c"><strong>계약금 5%</strong><span>초기 부담을 낮춘 계약 조건</span></div></div>
+    <ul class="conds">
+      <li><i class="ck"></i><div>중도금 이자후불제</div></li>
+      <li><i class="ck"></i><div>계약축하금 지급<small>지급 금액과 조건은 상담 시 안내</small></div></li>
+      <li><i class="ck"></i><div>분양가상한제 적용 단지</div></li>
+    </ul>
+    <div class="dates">
+      <div><strong>2027.12.26</strong><span>분양권 전매 가능일</span></div>
+      <div><strong>2028.04</strong><span>입주 예정</span></div>
+    </div>
+    <a class="btn btn-gold inline-cta" href="#apply" data-ev="cta" data-pos="terms">내 조건으로 필요한 자금 상담받기</a>
+    <p class="note">※ 세부 조건과 적용 대상은 상담을 통해 확인해 주세요. 입주 시기는 공정에 따라 달라질 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- 4. 평면 -->
+<section id="plan">
+  <div class="wrap">
+    <p class="eyebrow">119㎡A 평면</p>
+    <h2>48평의 여유는<br>구조에서 먼저 보입니다</h2>
+    <div class="plan"><img src="img/plan-119a.jpg" alt="119㎡A 평면도: 침실 3, 거실, 주방·식당, 알파룸, 드레스룸, 욕실 2" loading="lazy"></div>
+    <div class="specs">
+      <div class="spec"><span>전용면적</span><strong>119.98㎡</strong></div>
+      <div class="spec"><span>공급면적</span><strong>159.66㎡</strong></div>
+      <div class="spec"><span>욕실</span><strong>2개소</strong></div>
+    </div>
+    <ul class="feat"><li>전면 4베이</li><li>침실 3 + 알파룸</li><li>드레스룸</li></ul>
+    <p class="note">※ 119㎡A 기준. 평면은 이해를 돕기 위한 이미지로 실제와 다를 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- 5. 견본주택 유니트 -->
+<section class="band deep" id="unit">
+  <div class="wrap">
+    <p class="eyebrow">견본주택 119㎡ 유니트</p>
+    <h2>48평은 사진보다<br>실제로 더 넓습니다</h2>
+    <div class="gal">
+      <figure class="wide"><img src="img/unit-living.jpg" alt="거실에서 주방까지 이어지는 공간" loading="lazy"><figcaption>거실 · 주방 · 식당</figcaption></figure>
+      <figure><img src="img/unit-kitchen.jpg" alt="주방과 식당" loading="lazy"><figcaption>주방 · 식당</figcaption></figure>
+      <figure><img src="img/unit-master.jpg" alt="안방" loading="lazy"><figcaption>안방</figcaption></figure>
+      <figure><img src="img/unit-dress.jpg" alt="드레스룸" loading="lazy"><figcaption>드레스룸</figcaption></figure>
+      <figure><img src="img/unit-study.jpg" alt="서재" loading="lazy"><figcaption>서재</figcaption></figure>
+    </div>
+    <a class="btn btn-gold inline-cta" href="#apply" data-ev="cta_visit" data-pos="unit">견본주택 방문 예약하기</a>
+    <p class="note">※ 견본주택 사진으로 유상옵션 및 연출용 가구·소품이 포함되어 있습니다.</p>
+  </div>
+</section>
+
+<!-- 6. 커뮤니티 -->
+<section class="band" id="community">
+  <div class="wrap">
+    <p class="eyebrow">커뮤니티</p>
+    <h2>단지 안에<br>수영장, 사우나까지</h2>
+    <p class="lead">브레인시티 최초의 실내수영장을 품은 커뮤니티</p>
+    <div class="photo"><img src="img/pool.jpg" alt="실내수영장 투시도" loading="lazy"></div>
+    <div class="chips">
+      <span class="chip k">실내수영장</span><span class="chip k">사우나</span><span class="chip">골프클럽</span><span class="chip">피트니스 · GX룸</span><span class="chip">독서실 · 스터디룸</span><span class="chip">키즈스테이션</span><span class="chip">시니어클럽</span>
+    </div>
+    <p class="note">※ 커뮤니티 이미지는 CG로 실제와 다를 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- 7. 입지 -->
+<section id="location">
+  <div class="wrap">
+    <p class="eyebrow">입지</p>
+    <h2>브레인시티 안에서도<br>생활이 걸어서 닿는 자리</h2>
+    <div class="photo"><img src="img/siteplan.jpg" alt="단지 배치도" loading="lazy"></div>
+    <ul class="loc">
+      <li><b>의료</b><span>아주대학교 평택병원 도보권<span class="tag">계획</span></span></li>
+      <li><b>교육</b><span>유·초·중학교 도보권<span class="tag">계획</span><br>카이스트 평택캠퍼스 인근<span class="tag">계획</span></span></li>
+      <li><b>생활</b><span>중심상업지구 인접<span class="tag">계획</span></span></li>
+      <li><b>직장</b><span>삼성전자 평택캠퍼스 직주근접</span></li>
+    </ul>
+    <p class="note">※ ‘계획’ 표기 시설은 관계기관 사정에 따라 변경되거나 지연될 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- 8. 단지 개요 -->
+<section id="facts" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">단지 개요</p>
+    <h2>살아보면 알게 되는 디테일</h2>
+    <div class="facts">
+      <div class="fact"><span>규모</span><strong>16개동 · 1,990세대</strong></div>
+      <div class="fact"><span>층수</span><strong>지하 2층~지상 35층</strong></div>
+      <div class="fact"><span>주차</span><strong>세대당 1.43대</strong></div>
+      <div class="fact"><span>바닥구조</span><strong>스마트 3중 바닥</strong></div>
+      <div class="fact"><span>배치</span><strong>남향 위주</strong></div>
+      <div class="fact"><span>시공</span><strong>대우건설</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">자주 묻는 질문</p>
+    <h2>상담 전에 많이 물어보세요</h2>
+    <div class="faq">
+      <details><summary>지금 계약할 수 있는 타입은 무엇인가요?</summary><p>전용 59㎡와 84㎡는 마감되었고, 전용 119㎡가 선착순으로 분양 중입니다. 선택 가능한 동·호수는 상담 시 실시간으로 안내해 드립니다.</p></details>
+      <details><summary>계약금은 얼마인가요?</summary><p>계약금은 분양가의 5%입니다. 타입·동·호수별 분양가와 계약금 금액은 상담 신청 시 분양가표로 안내해 드립니다.</p></details>
+      <details><summary>중도금 이자후불제는 어떤 조건인가요?</summary><p>중도금 대출 이자를 입주 시점에 납부하는 방식입니다. 대출 실행 조건과 적용 대상은 개인별로 달라 상담에서 확인해 드립니다.</p></details>
+      <details><summary>견본주택은 언제 방문할 수 있나요?</summary><p>오전 10시부터 오후 7시까지 운영합니다. 상담 신청에서 ‘방문 예약’을 선택하시면 희망 날짜와 시간에 맞춰 예약을 확정해 드립니다.</p></details>
+      <details><summary>입주는 언제인가요?</summary><p>2028년 4월 입주 예정이며, 공정에 따라 달라질 수 있습니다. 분양권 전매는 2027년 12월 26일부터 가능합니다.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 10. 상담 신청 -->
+<section class="form-sec" id="apply">
+  <div class="wrap">
+    <p class="eyebrow">상담 신청</p>
+    <h2>남은 48평,<br>동·호수부터 확인해 보세요</h2>
+    <ul class="gets">
+      <li><b>1</b>119㎡ 분양가표</li>
+      <li><b>2</b>선택 가능한 동·호수</li>
+      <li><b>3</b>계약금·중도금 자금계획</li>
+      <li><b>4</b>견본주택 방문 예약</li>
+    </ul>
+
+    <form id="leadForm" novalidate>
+      <div class="field">
+        <span class="lbl">상담 방법<span class="req">*</span></span>
+        <div class="seg" role="radiogroup">
+          <input type="radio" name="type" id="t-call" value="전화상담" checked><label for="t-call">전화 상담<small>담당자가 연락드려요</small></label>
+          <input type="radio" name="type" id="t-visit" value="방문예약"><label for="t-visit">견본주택 방문 예약<small>날짜·시간 선택</small></label>
+        </div>
+      </div>
+      <div class="field" id="f-name">
+        <label for="name">이름<span class="req">*</span></label>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="20" placeholder="홍길동">
+        <span class="msg"></span>
+      </div>
+      <div class="field" id="f-phone">
+        <label for="phone">휴대폰 번호<span class="req">*</span></label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" maxlength="13" placeholder="010-0000-0000">
+        <span class="msg"></span>
+      </div>
+      <div class="row2" id="visitRow" hidden>
+        <div class="field" id="f-date">
+          <label for="vdate">희망 날짜<span class="req">*</span></label>
+          <input type="date" id="vdate" name="visit_date">
+          <span class="msg"></span>
+        </div>
+        <div class="field" id="f-time">
+          <label for="vtime">희망 시간<span class="req">*</span></label>
+          <select id="vtime" name="visit_time">
+            <option value="">선택</option>
+            <option>10:00~12:00</option><option>12:00~14:00</option><option>14:00~16:00</option><option>16:00~19:00</option>
+          </select>
+          <span class="msg"></span>
+        </div>
+      </div>
+      <div class="field" id="f-calltime">
+        <label for="calltime">통화 가능 시간</label>
+        <select id="calltime" name="call_time">
+          <option value="">언제든 가능</option><option>오전 (10~12시)</option><option>점심 (12~14시)</option><option>오후 (14~17시)</option><option>저녁 (17~19시)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="purpose">관심 내용</label>
+        <select id="purpose" name="purpose">
+          <option value="">선택 안 함</option><option>실거주</option><option>투자</option><option>분양가·계약금 문의</option><option>동·호수 문의</option><option>대출·자금계획</option>
+        </select>
+      </div>
+
+      <div class="hp" aria-hidden="true"><label for="company">회사</label><input type="text" id="company" name="company" tabindex="-1" autocomplete="off"></div>
+
+      <div class="consent" id="f-consent">
+        <label class="chk all"><input type="checkbox" id="c-all">전체 동의</label>
+        <label class="chk"><input type="checkbox" id="c-collect" name="agree_collect" class="c-item">[필수] 개인정보 수집·이용 동의<button type="button" class="view" data-dlg="dlg-collect">보기</button></label>
+        <label class="chk"><input type="checkbox" id="c-third" name="agree_third" class="c-item">[필수] 개인정보 제3자 제공 동의<button type="button" class="view" data-dlg="dlg-third">보기</button></label>
+        <label class="chk"><input type="checkbox" id="c-mkt" name="agree_marketing" class="c-item">[선택] 분양 소식·혜택 안내 수신 동의<button type="button" class="view" data-dlg="dlg-mkt">보기</button></label>
+        <span class="msg"></span>
+      </div>
+
+      <button type="submit" class="btn btn-green submit" id="submitBtn">상담 신청하기</button>
+      <p class="form-foot">운영시간 오전 10시~오후 7시 · 신청 후 순서대로 연락드립니다</p>
+    </form>
+
+    <div class="done" id="done" hidden>
+      <img src="img/symbol.png" alt="" width="54" height="63" style="width:54px;height:auto">
+      <h3 id="doneTitle">상담 신청이 접수되었습니다</h3>
+      <p id="doneText">운영시간(오전 10시~오후 7시) 안에 담당자가 연락드립니다.</p>
+      <p>바로 상담을 원하시면</p>
+      <span class="num">1668-4270</span>
+      <a class="btn btn-gold" href="tel:16684270" data-ev="call" data-pos="done" style="width:100%">지금 전화하기</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo-white.png" alt="PRUGIO 푸르지오">
+    <div><b>브레인시티 푸르지오 분양 상담</b> 1668-4270<br>운영시간 오전 10:00 ~ 오후 7:00</div>
+    <div>본 페이지의 CG, 이미지 및 ‘계획’ 표기 사항은 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있으며, 관계기관 인허가 및 사정에 따라 변경될 수 있습니다. 분양 조건은 분양 상황에 따라 사전 고지 없이 변경될 수 있으니 계약 전 반드시 확인하시기 바랍니다.</div>
+    <div><button type="button" data-dlg="dlg-policy">개인정보처리방침</button></div>
+  </div>
+</footer>
+
+<div class="dock">
+  <div class="in">
+    <a class="btn btn-line tel" href="tel:16684270" data-ev="call" data-pos="dock"><small>전화 상담</small>1668-4270</a>
+    <a class="btn btn-gold" href="#apply" data-ev="cta" data-pos="dock">상담 신청</a>
+  </div>
+</div>
+
+<!-- 동의 내용: 문구는 Meta 인스턴트 양식의 개인정보 처리방침과 동일하게 맞춰 확정할 것 -->
+<dialog id="dlg-collect"><div class="in">
+  <h3>개인정보 수집·이용 동의</h3>
+  <table>
+    <tr><th>수집 목적</th><td>분양 상담 신청 접수, 상담 및 견본주택 방문 예약 안내</td></tr>
+    <tr><th>수집 항목</th><td>이름, 휴대폰 번호, 상담 방법, 희망 방문 일시, 통화 가능 시간, 관심 내용</td></tr>
+    <tr><th>보유 기간</th><td>상담 목적 달성 후 지체 없이 파기 (최대 수집일로부터 1년)</td></tr>
+  </table>
+  <p>동의를 거부할 수 있으며, 거부 시 상담 신청이 제한됩니다.</p>
+</div><button type="button" class="x">닫기</button></dialog>
+
+<dialog id="dlg-third"><div class="in">
+  <h3>개인정보 제3자 제공 동의</h3>
+  <table>
+    <tr><th>제공받는 자</th><td>브레인시티 푸르지오 분양 상담 업무 수행사</td></tr>
+    <tr><th>제공 목적</th><td>분양 상담, 분양 정보 안내, 견본주택 방문 예약</td></tr>
+    <tr><th>제공 항목</th><td>이름, 휴대폰 번호, 상담 방법, 희망 방문 일시, 관심 내용</td></tr>
+    <tr><th>보유 기간</th><td>제공 목적 달성 후 지체 없이 파기 (최대 1년)</td></tr>
+  </table>
+  <p>동의를 거부할 수 있으며, 거부 시 상담 신청이 제한됩니다.</p>
+</div><button type="button" class="x">닫기</button></dialog>
+
+<dialog id="dlg-mkt"><div class="in">
+  <h3>분양 소식·혜택 안내 수신 동의 (선택)</h3>
+  <table>
+    <tr><th>목적</th><td>분양 조건 변경, 잔여 세대, 이벤트 등 안내 (문자·전화)</td></tr>
+    <tr><th>항목</th><td>이름, 휴대폰 번호</td></tr>
+    <tr><th>보유 기간</th><td>동의 철회 시 또는 분양 종료 시까지</td></tr>
+  </table>
+  <p>동의하지 않아도 상담 신청은 가능합니다.</p>
+</div><button type="button" class="x">닫기</button></dialog>
+
+<dialog id="dlg-policy"><div class="in">
+  <h3>개인정보처리방침</h3>
+  <p>브레인시티 푸르지오 분양 상담(이하 ‘회사’)은 이용자의 개인정보를 중요하게 여기며, 「개인정보 보호법」을 준수합니다.</p>
+  <p><b>1. 수집 항목 및 방법</b><br>이름, 휴대폰 번호, 상담 방법, 희망 방문 일시, 통화 가능 시간, 관심 내용을 본 페이지 상담 신청 양식으로 수집합니다. 접속 기록과 광고 성과 측정을 위한 쿠키(Meta 픽셀)가 함께 처리될 수 있습니다.</p>
+  <p><b>2. 이용 목적</b><br>분양 상담, 견본주택 방문 예약, 분양 정보 안내</p>
+  <p><b>3. 보유 및 파기</b><br>목적 달성 후 지체 없이 파기하며 최대 수집일로부터 1년간 보관합니다.</p>
+  <p><b>4. 제3자 제공</b><br>이용자가 동의한 경우에 한해 분양 상담 업무 수행사에 제공합니다.</p>
+  <p><b>5. 이용자의 권리</b><br>열람, 정정, 삭제, 처리정지를 요청할 수 있으며 1668-4270으로 연락하시면 지체 없이 조치합니다.</p>
+  <p><b>6. 개인정보 보호책임자</b><br>연락처 1668-4270</p>
+</div><button type="button" class="x">닫기</button></dialog>
+
+<script>
+(function(){
+  var S = window.SITE || {};
+  var q = new URLSearchParams(location.search);
+  function px(ev, params, opt){ try{ if(window.fbq) fbq('track', ev, params||{}, opt||{}); }catch(e){} }
+  function cookie(n){ var m=document.cookie.match('(^|;)\\s*'+n+'=([^;]*)'); return m?decodeURIComponent(m[2]):''; }
+
+  // 유입 정보 보존 (UTM · fbclid)
+  var attr = {};
+  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'].forEach(function(k){ attr[k]=q.get(k)||''; });
+  try{ var saved=JSON.parse(sessionStorage.getItem('attr')||'{}'); Object.keys(attr).forEach(function(k){ if(!attr[k]&&saved[k]) attr[k]=saved[k]; }); sessionStorage.setItem('attr',JSON.stringify(attr)); }catch(e){}
+
+  // 전화·CTA 클릭 이벤트
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('[data-ev]'); if(!a) return;
+    var ev=a.getAttribute('data-ev'), pos=a.getAttribute('data-pos');
+    if(ev==='call') px('Contact',{content_name:'call_'+pos});
+    if(ev==='cta_visit'){ var v=document.getElementById('t-visit'); v.checked=true; v.dispatchEvent(new Event('change',{bubbles:true})); }
+    if(ev==='cta'||ev==='cta_visit'){ if(!formStarted){ px('ViewContent',{content_name:'apply_click_'+pos}); } }
+  });
+
+  // 분양 조건 섹션 도달 → ViewContent
+  var seen=false;
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es,o){ es.forEach(function(en){ if(en.isIntersecting&&!seen){ seen=true; px('ViewContent',{content_name:'terms_section'}); o.disconnect(); } }); },{threshold:.4}).observe(document.getElementById('terms'));
+  }
+
+  // 정책 보기
+  document.querySelectorAll('[data-dlg]').forEach(function(b){
+    b.addEventListener('click',function(e){ e.preventDefault(); e.stopPropagation(); var d=document.getElementById(b.getAttribute('data-dlg')); if(d&&d.showModal) d.showModal(); });
+  });
+  document.querySelectorAll('dialog .x').forEach(function(b){ b.addEventListener('click',function(){ b.closest('dialog').close(); }); });
+
+  var form=document.getElementById('leadForm'), btn=document.getElementById('submitBtn');
+  var visitRow=document.getElementById('visitRow'), callRow=document.getElementById('f-calltime');
+  var startedAt=Date.now(), formStarted=false;
+
+  // 오늘 이후 날짜만
+  var d=new Date(); var iso=new Date(d.getTime()-d.getTimezoneOffset()*6e4).toISOString().slice(0,10);
+  document.getElementById('vdate').min=iso;
+
+  form.addEventListener('focusin',function(){ if(!formStarted){ formStarted=true; px('InitiateCheckout',{content_name:'lead_form_start'}); } });
+  form.addEventListener('change',function(e){
+    if(e.target.name==='type'){ var v=e.target.value==='방문예약'; visitRow.hidden=!v; callRow.hidden=v; }
+  });
+
+  // 전화번호 자동 하이픈
+  var ph=document.getElementById('phone');
+  ph.addEventListener('input',function(){
+    var n=ph.value.replace(/\D/g,'').slice(0,11);
+    ph.value = n.length<4?n : n.length<8? n.slice(0,3)+'-'+n.slice(3) : n.slice(0,3)+'-'+n.slice(3,n.length-4)+'-'+n.slice(-4);
+  });
+
+  // 전체 동의
+  var all=document.getElementById('c-all'), items=[].slice.call(document.querySelectorAll('.c-item'));
+  all.addEventListener('change',function(){ items.forEach(function(c){ c.checked=all.checked; }); });
+  items.forEach(function(c){ c.addEventListener('change',function(){ all.checked=items.every(function(x){return x.checked;}); }); });
+
+  function setErr(id,msg){ var f=document.getElementById(id); f.classList.toggle('bad',!!msg); f.querySelector('.msg').textContent=msg||''; }
+
+  function validate(){
+    var ok=true, first=null;
+    var name=document.getElementById('name').value.trim();
+    if(name.length<2||!/^[가-힣a-zA-Z\s]+$/.test(name)){ setErr('f-name','이름을 2자 이상 한글 또는 영문으로 입력해 주세요.'); ok=false; first=first||'name'; } else setErr('f-name');
+    var digits=ph.value.replace(/\D/g,'');
+    if(!/^01[016789]\d{7,8}$/.test(digits)){ setErr('f-phone','휴대폰 번호를 확인해 주세요. 예) 010-1234-5678'); ok=false; first=first||'phone'; } else setErr('f-phone');
+    if(!visitRow.hidden){
+      if(!document.getElementById('vdate').value){ setErr('f-date','날짜를 선택해 주세요.'); ok=false; first=first||'vdate'; } else setErr('f-date');
+      if(!document.getElementById('vtime').value){ setErr('f-time','시간을 선택해 주세요.'); ok=false; first=first||'vtime'; } else setErr('f-time');
+    }
+    var cOk=document.getElementById('c-collect').checked&&document.getElementById('c-third').checked;
+    setErr('f-consent', cOk?'':'필수 항목 두 가지에 동의해 주세요.'); if(!cOk){ ok=false; first=first||'c-collect'; }
+    if(first) document.getElementById(first).focus();
+    return ok;
+  }
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!validate()) return;
+    if(document.getElementById('company').value) return;            // 스팸 봇
+    if(Date.now()-startedAt<3000) return;                           // 너무 빠른 제출
+    var digits=ph.value.replace(/\D/g,'');
+    try{ var last=localStorage.getItem('lead_'+digits); if(last && Date.now()-(+last)<6e5){ showDone(true); return; } }catch(e){}
+
+    var type=form.querySelector('[name=type]:checked').value;
+    var eventId='lead_'+Date.now()+'_'+Math.random().toString(36).slice(2,8);
+    var data={
+      site:S.SITE_ID, submitted_at:new Date().toISOString(), event_id:eventId,
+      type:type, name:document.getElementById('name').value.trim(), phone:digits, phone_fmt:ph.value,
+      visit_date:type==='방문예약'?document.getElementById('vdate').value:'',
+      visit_time:type==='방문예약'?document.getElementById('vtime').value:'',
+      call_time:type==='전화상담'?document.getElementById('calltime').value:'',
+      purpose:document.getElementById('purpose').value,
+      agree_collect:'Y', agree_third:'Y', agree_marketing:document.getElementById('c-mkt').checked?'Y':'N',
+      page_url:location.href.split('#')[0], referrer:document.referrer, user_agent:navigator.userAgent,
+      fbp:cookie('_fbp'), fbc:cookie('_fbc')||(attr.fbclid?'fb.1.'+Date.now()+'.'+attr.fbclid:'')
+    };
+    Object.keys(attr).forEach(function(k){ data[k]=attr[k]; });
+
+    btn.disabled=true; btn.textContent='접수 중…';
+    var done=function(){
+      px('Lead',{content_name:type,content_category:'119'},{eventID:eventId});
+      if(type==='방문예약') px('Schedule',{content_name:'model_house_visit'},{eventID:eventId+'_s'});
+      try{ localStorage.setItem('lead_'+digits,String(Date.now())); }catch(e){}
+      showDone(false,type);
+    };
+    if(!S.WEBHOOK_URL){ setTimeout(done,500); return; }           // 데모 모드
+    fetch(S.WEBHOOK_URL,{method:'POST',mode:'no-cors',body:new URLSearchParams(data),keepalive:true})
+      .then(function(){ done(); })
+      .catch(function(){
+        btn.disabled=false; btn.textContent='상담 신청하기';
+        setErr('f-consent','일시적인 오류로 접수되지 않았습니다. 다시 눌러 주시거나 1668-4270으로 전화해 주세요.');
+      });
+  });
+
+  function showDone(dup,type){
+    form.hidden=true; var el=document.getElementById('done'); el.hidden=false;
+    if(dup){ document.getElementById('doneTitle').textContent='이미 접수된 번호입니다'; document.getElementById('doneText').textContent='담당자가 곧 연락드립니다. 급하시면 아래 번호로 전화해 주세요.'; }
+    else if(type==='방문예약'){ document.getElementById('doneTitle').textContent='방문 예약이 접수되었습니다'; document.getElementById('doneText').textContent='담당자가 희망 일시를 확인한 뒤 예약 확정 연락을 드립니다.'; }
+    el.scrollIntoView({block:'center'});
+  }
+})();
+</script>
+</body>
+</html>
