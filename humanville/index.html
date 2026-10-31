@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>천안 휴먼빌 퍼스트시티 | 관심고객 등록·방문예약</title>
+<meta name="description" content="성성호수공원 생활권 1,541세대 대단지. 전 세대 전용 84㎡ 4가지 특화 설계, 계약금 500만원 정액제. 천안 휴먼빌 퍼스트시티 분양 정보와 견본주택 방문예약.">
+<meta name="theme-color" content="#102747">
+<meta property="og:title" content="천안 휴먼빌 퍼스트시티 | 계약금 500만원 정액제">
+<meta property="og:description" content="성성호수공원 생활권 1,541세대 · 전 세대 84㎡ · 2029년 5월 입주 예정">
+<meta property="og:image" content="img/hero.jpg">
+<!-- ▼ Meta 픽셀: 픽셀 ID를 받으면 아래 주석을 풀고 YOUR_PIXEL_ID를 바꿔 넣으세요 (신청 완료 시 Lead 이벤트는 이미 연결돼 있음)
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','YOUR_PIXEL_ID');fbq('track','PageView');</script>
+-->
+<style>
+@font-face{font-family:"GmarketSans";src:local("Gmarket Sans TTF Light"),local("GmarketSansTTFLight"),local("Gmarket Sans Light"),local("GmarketSansLight"),url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");font-weight:300;font-display:swap}
+@font-face{font-family:"GmarketSans";src:local("Gmarket Sans TTF Medium"),local("GmarketSansTTFMedium"),local("Gmarket Sans Medium"),local("GmarketSansMedium"),url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");font-weight:500;font-display:swap}
+@font-face{font-family:"GmarketSans";src:local("Gmarket Sans TTF Bold"),local("GmarketSansTTFBold"),local("Gmarket Sans Bold"),local("GmarketSansBold"),url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");font-weight:700;font-display:swap}
+
+:root{
+  --ink:#102747;        /* 깊은 호수 네이비 */
+  --lake:#1D4479;       /* 미드 네이비 */
+  --lake-2:#1D4479;
+  --sky:#FFD21F;        /* 레몬 옐로 — 어두운 배경 위 강조 */
+  --mist:#E7EDF6;
+  --cream:#F3F5F9;
+  --paper:#FFFFFF;
+  --gold:#FFD21F;
+  --gold-l:#FFD21F;
+  --red:#FF4A35;        /* 레드 — 금액 · 신청 버튼 */
+  --cta:#FF4A35;
+  --cta-d:#E5361F;
+  --text:#102747;
+  --sub:#5C6B78;
+  --line:rgba(16,39,71,.12);
+  --head:"GmarketSans","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --body:"GmarketSans","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --r:18px;
+  --bar:64px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+html,body{overflow-x:hidden}
+body{font-family:var(--body);color:var(--text);background:var(--cream);line-height:1.6;word-break:keep-all;-webkit-font-smoothing:antialiased;padding-bottom:calc(var(--bar) + env(safe-area-inset-bottom,0px))}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.h{font-family:var(--head);font-weight:900;letter-spacing:-.025em;line-height:1.22}
+.note{font-size:12px;color:var(--sub);line-height:1.55;margin-top:14px}
+
+/* ===== 이미지 자리 (이미지가 없으면 라벨이 보이고, img/ 폴더에 파일을 넣으면 자동으로 사진이 보임) ===== */
+.ph{position:relative;background:linear-gradient(135deg,#1D4479 0%,#102747 70%)}
+.ph:before{content:attr(data-ph);position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:12px;color:rgba(255,255,255,.55);font-size:13px;font-weight:700;letter-spacing:.02em}
+.ph.light{background:linear-gradient(135deg,#E7EDF6,#D3DEEE)}
+.ph.light:before{color:rgba(16,39,71,.45)}
+.ph img{position:relative;z-index:1}
+
+/* ===== 버튼 ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:14px 22px;border:0;border-radius:999px;font-weight:800;font-size:16px;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s;white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn-cta{background:var(--cta);color:#fff;box-shadow:0 10px 24px -10px rgba(255,74,53,.7)}
+.btn-cta:hover{background:var(--cta-d)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px;flex:0 0 auto}
+
+/* ===== 헤더 ===== */
+.top{position:sticky;top:0;z-index:50;background:rgba(16,39,71,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff}
+.top .wrap{display:flex;align-items:center;height:56px;gap:10px}
+.brand{font-family:var(--head);font-weight:900;font-size:clamp(13.5px,3.9vw,17px);letter-spacing:-.03em;display:flex;align-items:center;gap:7px;white-space:nowrap;min-width:0}
+.brand i{flex:0 0 auto;width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(255,74,53,.3)}
+.nav{display:none;gap:24px;margin-left:auto;font-size:14px;font-weight:600;color:rgba(255,255,255,.78)}
+.nav a:hover{color:#fff}
+.top-tel{margin-left:auto;flex:0 0 auto;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;font-weight:800;font-size:clamp(12.5px,3.5vw,15px);line-height:1;color:var(--ink);background:var(--gold);padding:8px 12px;border-radius:999px;box-shadow:0 4px 12px -6px rgba(0,0,0,.5)}
+.top-tel svg{width:14px;height:14px;flex:0 0 auto}
+
+/* ===== 히어로 ===== */
+.hero{position:relative;color:#fff;background:var(--ink);overflow:hidden}
+.hero-bg{position:absolute;left:0;right:0;top:0;height:560px}
+.hero-bg.ph:before{align-items:end;padding-bottom:120px}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:62% 85%}
+.hero-bg:after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(16,39,71,.62) 0%,rgba(16,39,71,.38) 38%,rgba(16,39,71,.08) 62%,rgba(16,39,71,.35) 82%,#102747 100%)}
+.hero .wrap{position:relative;z-index:3;display:grid;gap:28px;padding-top:30px;padding-bottom:30px}
+.eyebrow-pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);color:#fff}
+.eyebrow-pill b{color:var(--gold-l)}
+.hero h1{font-size:clamp(34px,9.4vw,54px);margin:16px 0 14px;text-shadow:0 2px 18px rgba(8,20,40,.55)}
+.hero-copy{min-height:470px}
+.hero .lead{text-shadow:0 1px 10px rgba(8,20,40,.6);font-size:clamp(15px,3.9vw,19px);font-weight:600;color:rgba(255,255,255,.88);line-height:1.55}
+.hero h1 .sm{display:block;font-size:.5em;font-weight:800;letter-spacing:-.01em;color:var(--gold-l);margin-bottom:8px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:20px 0 22px}
+.trio div{background:#fff;border-radius:14px;padding:12px 6px;text-align:center;box-shadow:0 10px 24px -14px rgba(0,0,0,.6)}
+.trio b{display:block;font-family:var(--head);font-weight:900;font-size:clamp(15px,4.3vw,24px);white-space:nowrap;color:var(--red);line-height:1.2}
+.trio span{font-size:12px;font-weight:600;color:var(--sub);line-height:1.35;display:block;margin-top:3px}
+.hero-btns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.hero-btns .btn{padding:14px 10px;font-size:15.5px}
+
+/* ===== 폼 카드 ===== */
+.form-card{background:var(--paper);color:var(--text);border-radius:22px;padding:24px 20px;box-shadow:0 30px 60px -30px rgba(0,0,0,.55)}
+.form-card .ft{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:4px}
+.form-card h3{font-family:var(--head);font-weight:900;font-size:22px;letter-spacing:-.02em;line-height:1.3}
+.form-card .fs{font-size:13.5px;color:var(--sub);font-weight:600;margin-bottom:16px}
+.tag-live{flex:0 0 auto;font-size:11.5px;font-weight:800;color:var(--cta);background:#FFE6E2;padding:4px 9px;border-radius:999px}
+.field{display:block;margin-bottom:12px;border:0}
+.field>span,.field legend{display:block;font-size:13px;font-weight:700;margin-bottom:6px;color:var(--text)}
+.field em{font-style:normal;color:var(--cta);font-weight:800}
+.field i{font-style:normal;color:var(--sub);font-weight:600}
+.field input,.field select{width:100%;height:52px;border:1.5px solid var(--line);border-radius:12px;padding:0 14px;font-size:16px;background:#F8FAFC;transition:border .15s,background .15s}
+.field input:focus,.field select:focus{outline:0;border-color:var(--lake-2);background:#fff}
+.row2{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:8px}
+.agree{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;padding:12px 0 4px;border-top:1px solid var(--line);margin-top:4px}
+.agree input{width:20px;height:20px;accent-color:var(--lake);flex:0 0 auto}
+.agree button{margin-left:auto;border:0;background:none;font-size:13px;font-weight:700;color:var(--sub);text-decoration:underline;cursor:pointer;padding:4px}
+.agree-detail{display:none;background:var(--cream);border-radius:12px;padding:12px 14px;font-size:12.5px;color:var(--sub);line-height:1.6;margin-top:8px}
+.agree-detail.open{display:block}
+.agree-detail dt{font-weight:800;color:var(--text);float:left;width:64px}
+.agree-detail dd{margin-left:64px;margin-bottom:4px}
+.agree-detail a{text-decoration:underline;font-weight:700}
+.err{display:none;color:#C2321B;font-size:13.5px;font-weight:700;margin-top:10px}
+.form-card .btn-cta{width:100%;margin-top:14px;font-size:17px;min-height:58px}
+.form-card .tel-line{text-align:center;font-size:13.5px;color:var(--sub);font-weight:600;margin-top:12px}
+.form-card .tel-line a{color:var(--lake);font-weight:800}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.done{display:none;text-align:center;padding:24px 4px}
+.done .ok{width:60px;height:60px;border-radius:50%;background:var(--mist);color:var(--lake);display:grid;place-items:center;margin:0 auto 14px}
+.done .ok svg{width:30px;height:30px}
+.done h3{margin-bottom:6px}
+.done p{font-size:14.5px;color:var(--sub);font-weight:600}
+.done .btn{margin-top:18px}
+
+/* ===== 핵심 수치 바 ===== */
+.facts{background:var(--ink);color:#fff;border-top:1px solid rgba(255,255,255,.08)}
+.facts ul{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.1)}
+.facts li{background:var(--ink);padding:16px 8px;text-align:center}
+.facts b{display:block;font-family:var(--head);font-weight:900;font-size:clamp(14.5px,4vw,24px);white-space:nowrap;color:#fff;line-height:1.25}
+.facts span{font-size:12px;color:rgba(255,255,255,.62);font-weight:600}
+.facts li:nth-child(n+4){display:none}
+
+/* ===== 섹션 공통 ===== */
+.sec{padding:72px 0}
+.sec.alt{background:var(--paper)}
+.sec.dark{background:var(--ink);color:#fff}
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:800;letter-spacing:.16em;color:var(--lake-2);margin-bottom:12px}
+.eyebrow:before{content:"";width:22px;height:2px;background:var(--red)}
+.dark .eyebrow,.benefit .eyebrow,.final .eyebrow{color:var(--sky)}
+.sec-title{font-family:var(--head);font-weight:900;font-size:clamp(26px,6.6vw,40px);letter-spacing:-.025em;line-height:1.28}
+.sec-sub{font-size:15.5px;color:var(--sub);font-weight:600;margin:10px 0 32px}
+.dark .sec-sub{color:rgba(255,255,255,.68)}
+
+/* ===== 혜택 ===== */
+.benefit{background:linear-gradient(180deg,var(--ink) 0%,var(--lake) 100%);color:#fff;padding:60px 0 64px}
+.benefit-top{text-align:center}
+.benefit-top .sec-title b{color:var(--gold)}
+.benefit-sum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:28px 0 22px}
+.benefit-sum div{min-width:0;background:#fff;color:var(--text);border:0;border-radius:var(--r);padding:20px 4px;text-align:center}
+.benefit-sum small{display:block;font-size:12.5px;color:var(--sub);font-weight:600}
+.benefit-sum b{display:block;font-family:var(--head);font-weight:900;font-size:clamp(15px,4.4vw,30px);white-space:nowrap;letter-spacing:-.03em;color:var(--red);line-height:1.2;margin:4px 0}
+.benefit-sum span{font-size:13px;font-weight:700;line-height:1.35;display:block}
+.basic{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.basic span{font-size:13px;font-weight:700;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22)}
+.benefit .note{color:rgba(255,255,255,.6);text-align:center}
+
+/* ===== 프리미엄 ===== */
+.prem{display:grid;gap:12px}
+.pc{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px 20px 22px 76px;min-height:104px}
+.pc .no{position:absolute;left:20px;top:20px;font-family:var(--head);font-weight:900;font-size:34px;line-height:1;color:var(--red)}
+.pc h3{font-family:var(--head);font-weight:900;font-size:19px;letter-spacing:-.02em;line-height:1.35}
+.pc p{font-size:14.5px;color:var(--sub);font-weight:600;margin-top:4px;line-height:1.5}
+.pc.feat{padding:0;overflow:hidden;background:var(--ink);color:#fff;border:0;min-height:0}
+.pc.feat .pimg{height:200px}
+.pc.feat .pimg img{width:100%;height:100%;object-fit:cover;object-position:40% 50%}
+.pc.feat .in{position:relative;padding:20px 20px 22px 76px}
+.pc.feat .no{top:18px;color:var(--sky)}
+.pc.feat p{color:rgba(255,255,255,.72)}
+
+/* ===== CTA 띠 ===== */
+.strip{background:var(--lake);color:#fff}
+.strip .wrap{display:flex;flex-direction:column;gap:14px;padding-top:26px;padding-bottom:26px}
+.strip p{font-family:var(--head);font-weight:900;font-size:clamp(19px,5vw,26px);letter-spacing:-.02em;line-height:1.35}
+.strip p small{display:block;font-family:var(--body);font-size:14px;font-weight:600;color:rgba(255,255,255,.72);letter-spacing:0;margin-top:4px}
+.strip .btns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+
+/* ===== 사업개요 ===== */
+.ov{display:grid;gap:20px}
+.ov-img{border-radius:var(--r);overflow:hidden;aspect-ratio:16/10}
+.ov-img img{width:100%;height:100%;object-fit:cover}
+.cap{font-size:11.5px;color:var(--sub);margin-top:8px}
+.tbl{width:100%;border-collapse:collapse;background:var(--paper);border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.tbl th,.tbl td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);font-size:14.5px;vertical-align:top}
+.tbl tr:last-child th,.tbl tr:last-child td{border-bottom:0}
+.tbl th{width:30%;background:var(--mist);font-weight:800;color:var(--lake);white-space:nowrap}
+.tbl td{font-weight:600}
+.tbl td small{display:block;font-size:12.5px;color:var(--sub);font-weight:600}
+.zoom{cursor:zoom-in;position:relative}
+.zoom.has:after{content:"크게 보기 ＋";position:absolute;z-index:2;right:10px;bottom:10px;background:rgba(16,39,71,.8);color:#fff;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px}
+.siteplan{margin-top:20px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10}
+.siteplan img{width:100%;height:100%;object-fit:contain;background:#fff}
+
+/* ===== 입지 ===== */
+.loc-map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3}
+.loc-map img{width:100%;height:100%;object-fit:cover;background:#fff}
+.transit{display:grid;gap:12px;margin-top:20px}
+.tr{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px}
+.tr-h{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;margin-bottom:12px}
+.tr-h .ln{font-size:11.5px;font-weight:800;padding:3px 9px;border-radius:999px;color:#fff}
+.tr-h .ln.rail{background:#1C4E9A}.tr-h .ln.road{background:#2E7D5B}.tr-h .ln.gtx{background:#8A5A2B}
+.tr-h .soon{font-size:11.5px;color:var(--cta);font-weight:800;margin-left:auto}
+.tr ul{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.tr li{background:var(--cream);border-radius:12px;padding:10px 4px;text-align:center;min-width:0}
+.tr li b{display:block;font-family:var(--head);font-weight:900;font-size:clamp(14px,4vw,18px);white-space:nowrap;color:var(--ink);line-height:1.25}
+.tr li span{font-size:12px;font-weight:700;color:var(--sub);line-height:1.35;display:block;margin-top:2px}
+
+/* ===== 생활환경 ===== */
+.life-hero{position:relative;border-radius:var(--r);overflow:hidden;margin-bottom:14px;aspect-ratio:16/10}
+.life-hero img{width:100%;height:100%;object-fit:cover}
+.life-hero div{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:40px 18px 16px;background:linear-gradient(transparent,rgba(16,39,71,.92))}
+.life-hero b{font-family:var(--head);font-weight:900;font-size:21px;letter-spacing:-.02em;display:block}
+.life-hero span{font-size:13.5px;color:rgba(255,255,255,.8);font-weight:600}
+.life{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.lc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:18px 16px}
+.lc em{font-style:normal;font-size:11.5px;letter-spacing:.16em;font-weight:800;color:var(--gold)}
+.lc h3{font-family:var(--head);font-weight:900;font-size:18px;margin:4px 0 8px}
+.lc li{list-style:none;font-size:13.5px;color:rgba(255,255,255,.78);font-weight:600;line-height:1.5;padding-left:10px;position:relative;margin-bottom:3px}
+.lc li:before{content:"";position:absolute;left:0;top:.65em;width:4px;height:4px;border-radius:50%;background:var(--gold)}
+.lc.wide{grid-column:1/-1}
+.dark .note{color:rgba(255,255,255,.55)}
+
+/* ===== 커뮤니티 ===== */
+.land{display:grid;gap:12px}
+.lf{position:relative;border-radius:var(--r);overflow:hidden;margin:0;aspect-ratio:16/10}
+.lf img{width:100%;height:100%;object-fit:cover}
+.lf figcaption{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:40px 18px 16px;background:linear-gradient(transparent,rgba(16,39,71,.88));color:#fff}
+.lf b{display:block;font-family:var(--head);font-weight:900;font-size:20px;letter-spacing:-.02em}
+.lf span{font-size:13.5px;font-weight:500;color:rgba(255,255,255,.85)}
+.floor{margin-top:22px}
+.floor-h{display:flex;align-items:center;gap:8px;font-family:var(--head);font-weight:900;font-size:17px;margin-bottom:10px}
+.floor-h i{font-style:normal;font-size:12px;font-weight:800;color:#fff;background:var(--lake);padding:3px 9px;border-radius:999px}
+.iso{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:10px;aspect-ratio:954/745}
+.iso img{width:100%;height:100%;object-fit:contain;background:#fff}
+.fac{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.fc{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px 14px}
+.fc h3{font-family:var(--head);font-weight:900;font-size:15.5px;letter-spacing:-.02em;line-height:1.35}
+.fc p{font-size:12.5px;color:var(--sub);font-weight:500;line-height:1.45;margin-top:3px}
+.spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.sp{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 16px}
+.sp i{font-style:normal;font-family:var(--head);font-weight:900;font-size:13px;color:var(--red)}
+.sp h4{font-family:var(--head);font-weight:900;font-size:16.5px;letter-spacing:-.02em;margin:2px 0 4px;line-height:1.35}
+.sp p{font-size:13px;color:var(--sub);font-weight:600;line-height:1.45}
+.sub-h{font-family:var(--head);font-weight:900;font-size:20px;letter-spacing:-.02em;margin-top:40px}
+
+/* ===== 분양조건 ===== */
+.flow{display:grid;gap:10px}
+.fl{display:flex;align-items:center;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
+.fl .st{flex:0 0 auto;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--mist);color:var(--lake);font-size:12.5px;font-weight:800;text-align:center;line-height:1.2}
+.fl b{font-family:var(--head);font-weight:900;font-size:22px;color:var(--text);letter-spacing:-.02em;display:block;line-height:1.25}
+.fl span{font-size:13.5px;color:var(--sub);font-weight:600}
+.fl.hi{background:var(--ink);color:#fff;border:0}
+.fl.hi .st{background:var(--gold);color:var(--ink)}
+.fl.hi b{color:var(--gold-l)}
+.fl.hi span{color:rgba(255,255,255,.7)}
+.cmp{margin-top:28px;background:var(--paper);border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.cmp-row{display:grid;grid-template-columns:72px minmax(0,1fr) minmax(0,1.2fr);border-bottom:1px solid var(--line)}
+.cmp-row:last-child{border-bottom:0}
+.cmp-row>div{padding:13px 10px;font-size:13.5px;font-weight:600;line-height:1.4;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cmp-row .k{font-weight:800;color:var(--sub);background:var(--cream)}
+.cmp-row .a{color:var(--sub)}
+.cmp-row .b{font-weight:800;color:var(--red);background:#FFF4F2}
+.cmp-row .b small{display:block;font-weight:600;color:var(--sub);font-size:12px}
+.cmp-row.hd>div{font-size:12.5px;font-weight:800;color:var(--sub);background:var(--mist)}
+.cmp-row.hd .b{background:var(--ink);color:var(--gold)}
+.extra-cond{display:grid;gap:8px;margin-top:16px}
+.extra-cond div{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:700}
+.extra-cond svg{width:20px;height:20px;color:var(--lake-2);flex:0 0 auto;margin-top:1px}
+.extra-cond small{display:block;font-weight:600;color:var(--sub);font-size:13px}
+
+/* ===== 평면 ===== */
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 -20px;padding:0 20px 4px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:1.5px solid var(--line);background:var(--paper);border-radius:999px;padding:9px 16px;font-weight:800;font-size:14.5px;cursor:pointer}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.plan{margin-top:16px;background:var(--paper);border-radius:var(--r);border:1px solid var(--line);overflow:hidden;display:grid}
+.plan-img{background:#fff;padding:12px}
+.plan-img .pbox{aspect-ratio:1100/845;border-radius:12px;overflow:hidden}
+.plan-img img{width:100%;height:100%;object-fit:contain;background:#fff}
+.plan-info{padding:20px;border-top:1px solid var(--line)}
+.plan-info h3{font-family:var(--head);font-weight:900;font-size:34px;letter-spacing:-.02em;line-height:1}
+.plan-info h3 small{font-size:14px;color:var(--red);margin-left:6px;letter-spacing:.1em}
+.plan-info .pt{display:inline-block;align-self:flex-start;margin-top:10px;font-size:13px;font-weight:800;color:var(--lake);background:var(--mist);padding:5px 11px;border-radius:999px}
+.plan-info .pd{font-size:14px;color:var(--sub);font-weight:600;margin-top:10px;line-height:1.5}
+.plan-info dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:16px 0 18px;font-size:14.5px}
+.plan-info dt{color:var(--sub);font-weight:700}
+.plan-info dd{font-weight:800;text-align:right}
+.plan-info .btn{width:100%}
+
+/* ===== FAQ ===== */
+.faq{display:grid;gap:8px}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:17px 48px 17px 18px;font-weight:800;font-size:15.5px;position:relative;line-height:1.45}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:before{content:"Q";font-family:var(--head);font-weight:900;color:var(--red);margin-right:8px}
+.faq summary:after{content:"";position:absolute;right:20px;top:50%;width:9px;height:9px;border-right:2px solid var(--sub);border-bottom:2px solid var(--sub);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+.faq details[open] summary:after{transform:translateY(-30%) rotate(-135deg)}
+.faq .ans{padding:0 18px 18px 38px;font-size:14.5px;color:var(--sub);font-weight:600;line-height:1.65}
+.faq .ans b{color:var(--text)}
+
+/* ===== 마지막 신청 ===== */
+.final{background:linear-gradient(180deg,var(--lake) 0%,var(--ink) 100%);color:#fff;padding:72px 0}
+.final-grid{display:grid;gap:28px}
+.final .sec-title b{color:var(--gold)}
+.steps{list-style:none;display:grid;gap:10px;margin-top:24px}
+.steps li{display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px 16px}
+.steps i{font-style:normal;flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--ink);font-family:var(--head);font-weight:900;display:grid;place-items:center}
+.steps b{display:block;font-size:15px}
+.steps span{font-size:13px;color:rgba(255,255,255,.7);font-weight:600}
+.final-tel{display:flex;align-items:center;gap:14px;margin-top:20px;padding:18px;border-radius:14px;background:rgba(0,0,0,.2)}
+.final-tel small{display:block;font-size:12.5px;color:rgba(255,255,255,.65);font-weight:600}
+.final-tel b{font-family:var(--head);font-weight:900;font-size:28px;color:var(--gold-l);letter-spacing:-.01em;white-space:nowrap}
+.final-tel .btn{margin-left:auto;min-height:46px;padding:10px 18px;font-size:14.5px}
+
+/* ===== 푸터 ===== */
+footer{background:#0A1C35;color:rgba(255,255,255,.6);font-size:12.5px;line-height:1.7;padding:36px 0 40px}
+footer .brand{color:#fff;margin-bottom:10px}
+footer a{text-decoration:underline}
+footer p+p{margin-top:6px}
+
+/* ===== 하단 고정 바 ===== */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 -6px 20px rgba(16,39,71,.12)}
+.bar .btn{min-height:48px;font-size:15.5px;padding:10px}
+
+/* ===== 라이트박스 ===== */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(8,20,40,.92);display:none;align-items:center;justify-content:center;padding:20px;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-height:90vh;width:auto;max-width:100%;border-radius:8px;background:#fff}
+.lb button{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.15);color:#fff;font-size:24px;cursor:pointer}
+
+/* ===== 등장 효과 ===== */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ===== 태블릿·PC ===== */
+@media (min-width:720px){
+  .facts ul{grid-template-columns:repeat(5,1fr)}
+  .facts li:nth-child(n+4){display:block}
+  .prem{grid-template-columns:1fr 1fr}
+  .transit{grid-template-columns:repeat(3,1fr)}
+  .life{grid-template-columns:repeat(3,1fr)}
+  .lc.wide{grid-column:auto}
+  .land{grid-template-columns:1fr 1fr}
+  .fac{grid-template-columns:repeat(4,1fr)}
+  .spec{grid-template-columns:repeat(3,1fr)}
+  .flow{grid-template-columns:repeat(3,1fr)}
+  .fl{flex-direction:column;text-align:center;padding:24px 16px}
+  .cmp-row{grid-template-columns:140px 1fr 1.2fr}
+  .cmp-row>div{padding:15px 18px;font-size:14.5px}
+  .extra-cond{grid-template-columns:repeat(3,1fr)}
+  .strip .wrap{flex-direction:row;align-items:center;justify-content:space-between}
+  .strip .btns{flex:0 0 auto;grid-template-columns:auto auto}
+}
+@media (min-width:1024px){
+  body{padding-bottom:0}
+  .bar{display:none}
+  .nav{display:flex}
+  .top-tel{margin-left:28px}
+  .top .wrap{max-width:1440px;padding-left:48px;padding-right:48px}
+  .hero{min-height:calc(100vh - 56px);display:flex;align-items:center}
+  .hero .wrap{grid-template-columns:440px 1fr 380px;align-items:center;gap:24px;padding:48px;width:100%;max-width:1440px}
+  .hero .wrap>.form-card{grid-column:3}
+  .hero-bg{height:auto;bottom:0}
+  .hero-bg.ph:before{padding-bottom:0}
+  .hero-bg img{object-position:50% 70%}
+  .hero-bg:after{background:linear-gradient(90deg,rgba(16,39,71,.85) 0%,rgba(16,39,71,.55) 30%,rgba(16,39,71,.04) 48%,rgba(16,39,71,.04) 62%,rgba(16,39,71,.4) 100%),linear-gradient(0deg,rgba(16,39,71,.45) 0%,transparent 30%)}
+  .hero-copy{min-height:0}
+  .hero h1{font-size:50px}
+  .hero-btns{display:flex;gap:10px}
+  .hero-btns .btn{padding:14px 26px}
+  .hero-btns .btn-cta{display:none}
+  .trio{max-width:440px}
+  .form-card{padding:30px 28px}
+  .sec{padding:104px 0}
+  .ov{grid-template-columns:1fr 1fr;align-items:start}
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+  .loc-grid .transit{grid-template-columns:1fr;margin-top:0}
+  .prem{grid-template-columns:repeat(3,1fr)}
+  .pc.feat{grid-row:span 2}
+  .pc.feat .pimg{height:240px}
+  .plan{grid-template-columns:1.5fr 1fr}
+  .plan-info{border-top:0;border-left:1px solid var(--line);padding:32px 28px;display:flex;flex-direction:column;justify-content:center}
+  .final-grid{grid-template-columns:1fr 440px;gap:64px;align-items:center}
+  .tabs{margin:0;padding:0}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#top" class="brand"><i></i>천안 휴먼빌 퍼스트시티</a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#premium">프리미엄</a><a href="#overview">사업개요</a><a href="#location">입지</a><a href="#community">커뮤니티</a><a href="#condition">분양조건</a><a href="#types">평면</a><a href="#faq">FAQ</a>
+    </nav>
+    <a href="tel:16684270" class="top-tel" data-call><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>1668-4270</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===================== 1. 메인 카피 + 관심고객 등록 ===================== -->
+<section class="hero">
+  <div class="hero-bg ph" data-ph="조감도 이미지 자리 (img/hero.jpg)"><img src="img/hero.jpg" alt="천안 휴먼빌 퍼스트시티 조감도" fetchpriority="high"></div>
+  <div class="wrap">
+    <div>
+      <div class="hero-copy">
+        <span class="eyebrow-pill"><b>성성호수공원 생활권</b> · 1,541세대 대단지</span>
+        <h1 class="h"><span class="sm">천안 휴먼빌 퍼스트시티</span>계약금<br><em>500만원</em> 정액제<br>전 세대 84㎡</h1>
+        <p class="lead">성성호수공원 · 불당지구 생활권<br>2029년 5월 입주 예정</p>
+      </div>
+      <div class="trio">
+        <div><b>1,541세대</b><span>천안 첫<br>휴먼빌 대단지</span></div>
+        <div><b>500만원</b><span>계약금<br>정액제</span></div>
+        <div><b>4개 타입</b><span>전용 84㎡<br>특화 설계</span></div>
+      </div>
+      <div class="hero-btns">
+        <a href="#apply-top" class="btn btn-cta" data-cta="hero">관심고객 등록</a>
+        <a href="tel:16684270" class="btn btn-ghost" data-call><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>전화상담</a>
+      </div>
+    </div>
+    <div class="form-card" id="apply-top" data-form="hero"></div>
+  </div>
+</section>
+
+<section class="facts" aria-label="단지 핵심 정보">
+  <ul>
+    <li><b>1,541세대</b><span>총 세대수</span></li>
+    <li><b>84㎡ 단일</b><span>전용 4개 타입</span></li>
+    <li><b>2029.05</b><span>입주 예정</span></li>
+    <li><b>최고 33층</b><span>지하3층~지상33층 · 12개동</span></li>
+    <li><b>13.18%</b><span>낮은 건폐율</span></li>
+  </ul>
+</section>
+
+<!-- ===================== 핵심 혜택 ===================== -->
+<section class="benefit" id="benefit">
+  <div class="wrap">
+    <div class="benefit-top rv">
+      <p class="eyebrow" style="justify-content:center">SPECIAL BENEFIT</p>
+      <h2 class="sec-title">초기 부담은 낮추고<br><b>기본은 높인</b> 조건</h2>
+    </div>
+    <div class="benefit-sum rv">
+      <div><small>계약금</small><b>500만원</b><span>정액제</span></div>
+      <div><small>중도금</small><b>60%</b><span>이자후불제<br>대출 알선</span></div>
+      <div><small>마감재</small><b>기본 제공</b><span>통상 유상 옵션<br>품목 일부</span></div>
+    </div>
+    <div class="basic rv">
+      <span>거실 아트월 타일</span><span>주방 엔지니어드 스톤 상판</span><span>침실 붙박이장(발코니 확장 시)</span>
+    </div>
+    <p class="note">※ 입주자모집공고(2025.10) 및 공식 보도자료 기준이며, 기본 제공 품목은 타입에 따라 다릅니다. 현재 적용 조건은 계약 전 분양 상담을 통해 반드시 확인하시기 바랍니다.</p>
+  </div>
+</section>
+
+<!-- ===================== 2. 핵심 프리미엄 ===================== -->
+<section class="sec" id="premium">
+  <div class="wrap">
+    <p class="eyebrow rv">01 · PREMIUM</p>
+    <h2 class="sec-title rv">왜 지금,<br>천안 휴먼빌 퍼스트시티인가</h2>
+    <p class="sec-sub rv">호수공원 · 대단지 · 조건, 세 가지를 한 번에</p>
+    <div class="prem">
+      <article class="pc feat rv">
+        <div class="pimg ph" data-ph="성성호수공원 사진 자리 (img/park.jpg)"><img src="img/park.jpg" alt="성성호수공원과 천안 휴먼빌 퍼스트시티 위치" loading="lazy"></div>
+        <div class="in"><span class="no">01</span><h3>성성호수공원 도보 생활권</h3><p>성성·업성·부성지구와 함께 호수공원을 중심으로 약 2만5천 가구 주거타운이 조성되는 곳입니다.</p></div>
+      </article>
+      <article class="pc rv"><span class="no">02</span><h3>1,541세대 대단지</h3><p>천안에 처음 들어서는 휴먼빌 브랜드 대단지</p></article>
+      <article class="pc rv"><span class="no">03</span><h3>계약금 500만원 정액제</h3><p>초기 부담 500만원 · 중도금 60% 이자후불제</p></article>
+      <article class="pc rv"><span class="no">04</span><h3>불당지구 생활권 공유</h3><p>성성지구 · 불당동 학원가 이용</p></article>
+      <article class="pc rv"><span class="no">05</span><h3>삼성전자 천안캠퍼스 직주근접</h3><p>삼성대로 · 번영로로 산업단지 출퇴근</p></article>
+      <article class="pc rv"><span class="no">06</span><h3>84㎡ 4가지 특화 설계</h3><p>주방 · 거실 · 수납 · 다자녀, 생활에 맞춰 선택</p></article>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <p>우리 집 조건에 맞는지,<br>상담으로 빠르게 확인하세요<small>사전 예약 고객 우선 상담 안내</small></p>
+    <div class="btns"><a href="#apply" class="btn btn-cta" data-cta="strip1">관심고객 등록</a><a href="tel:16684270" class="btn btn-ghost" data-call>전화상담</a></div>
+  </div>
+</div>
+
+<!-- ===================== 3. 사업개요 ===================== -->
+<section class="sec alt" id="overview">
+  <div class="wrap">
+    <p class="eyebrow rv">02 · OVERVIEW</p>
+    <h2 class="sec-title rv">한눈에 보는 사업개요</h2>
+    <p class="sec-sub rv">입주자모집공고 기준</p>
+    <div class="ov">
+      <div class="rv">
+        <div class="ov-img zoom ph" data-ph="투시도 이미지 자리 (img/perspective.jpg)"><img src="img/perspective.jpg" alt="천안 휴먼빌 퍼스트시티 투시도" loading="lazy"></div>
+        <p class="cap">※ 상기 CG는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.</p>
+      </div>
+      <table class="tbl rv">
+        <tr><th>단지명</th><td>천안 휴먼빌 퍼스트시티</td></tr>
+        <tr><th>위치</th><td>충청남도 천안시 서북구 부대동 일원<small>부대2지구 · 성성생활권</small></td></tr>
+        <tr><th>규모</th><td>지하 3층 ~ 지상 33층, 12개동<small>총 1,541세대 · 전용 84㎡ 단일 (4개 타입)</small></td></tr>
+        <tr><th>입주</th><td>2029년 5월 예정</td></tr>
+        <tr><th>건폐율</th><td>13.18%</td></tr>
+        <tr><th>시공</th><td>일신건영(주)</td></tr>
+      </table>
+    </div>
+    <div class="siteplan zoom ph light rv" data-ph="단지 배치도 자리 (img/siteplan.jpg)"><img src="img/siteplan.jpg" alt="단지 배치도 — 12개동 1,541세대" loading="lazy"></div>
+    <p class="cap">※ 배치도는 이해를 돕기 위한 것으로 실제와 다를 수 있습니다. 이미지를 누르면 크게 볼 수 있어요.</p>
+  </div>
+</section>
+
+<!-- ===================== 4. 입지 · 교통 ===================== -->
+<section class="sec" id="location">
+  <div class="wrap">
+    <p class="eyebrow rv">03 · LOCATION</p>
+    <h2 class="sec-title rv">성성호수공원과<br>불당지구 사이</h2>
+    <p class="sec-sub rv">KTX 천안아산역 · 천안IC, 예정된 부성역까지</p>
+    <div class="loc-grid">
+      <div class="rv">
+        <div class="loc-map zoom ph light" data-ph="입지안내도 자리 (img/location-map.jpg)"><img src="img/location-map.jpg" alt="천안 휴먼빌 퍼스트시티 입지 안내도" loading="lazy"></div>
+      </div>
+      <div class="transit">
+        <div class="tr rv">
+          <div class="tr-h"><span class="ln rail">철도</span>역세권</div>
+          <ul><li><b>부성역</b><span>1호선(가칭)<br>2029 개통 예정</span></li><li><b>천안아산역</b><span>KTX</span></li><li><b>터미널</b><span>천안<br>고속버스</span></li></ul>
+        </div>
+        <div class="tr rv">
+          <div class="tr-h"><span class="ln road">도로</span>광역 도로망</div>
+          <ul><li><b>천안IC</b><span>인접</span></li><li><b>경부</b><span>고속도로</span></li><li><b>논산천안</b><span>고속도로</span></li></ul>
+        </div>
+        <div class="tr rv">
+          <div class="tr-h"><span class="ln gtx">GTX-C</span>천안역 연장<span class="soon">검토 중</span></div>
+          <ul><li><b>천안역</b><span>연장 검토</span></li><li><b>강남권</b><span>연장 시<br>1시간 이내 전망</span></li><li><b>삼성대로</b><span>번영로<br>산업단지 연결</span></li></ul>
+        </div>
+      </div>
+    </div>
+    <p class="note">※ 부성역(가칭)은 2029년 개통 예정, GTX-C 천안역 연장은 검토 중인 계획으로 관계기관 사정에 따라 변경되거나 지연될 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- ===================== 5. 생활환경 ===================== -->
+<section class="sec dark" id="life">
+  <div class="wrap">
+    <p class="eyebrow rv">04 · LIFE</p>
+    <h2 class="sec-title rv">공원 · 쇼핑 · 교육 · 직장<br>다 가까운 일상</h2>
+    <p class="sec-sub rv">호수공원 산책부터 백화점, 학원가까지</p>
+    <div class="life-hero ph rv" data-ph="항공 · 호수공원 이미지 자리 (img/aerial.jpg)">
+      <img src="img/aerial.jpg" alt="천안 휴먼빌 퍼스트시티 야경 조감도" loading="lazy">
+      <div><b>약 2만5천 가구 주거타운</b><span>성성 · 업성 · 부성지구와 성성호수공원을 중심으로 조성</span></div>
+    </div>
+    <div class="life">
+      <div class="lc rv"><em>LIFE</em><h3>쇼핑 · 생활</h3><ul><li>신세계백화점</li><li>코스트코</li><li>이마트</li></ul></div>
+      <div class="lc rv"><em>EDU</em><h3>교육</h3><ul><li>단지 앞 초등학교 신설 예정</li><li>부성중 · 오성고</li><li>불당동 · 성성지구 학원가</li></ul></div>
+      <div class="lc rv"><em>JOB</em><h3>직주근접</h3><ul><li>삼성전자 천안캠퍼스</li><li>천안제3일반산업단지</li></ul></div>
+      <div class="lc rv"><em>TRAFFIC</em><h3>교통</h3><ul><li>KTX 천안아산역</li><li>천안IC · 천안고속버스터미널</li></ul></div>
+      <div class="lc wide rv"><em>FUTURE</em><h3>개발 계획</h3><ul><li>1호선 부성역(가칭) 2029년 개통 예정</li><li>GTX-C 천안역 연장 검토</li><li>천안시청 등 공공기관 인접</li></ul></div>
+    </div>
+    <p class="note">※ 학교 신설·교통·개발 계획은 예정 또는 검토 중인 사항으로 관계기관 사정에 따라 변경·지연될 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- ===================== 6. 단지 · 커뮤니티 ===================== -->
+<section class="sec" id="community">
+  <div class="wrap">
+    <p class="eyebrow rv">05 · COMMUNITY</p>
+    <h2 class="sec-title rv">2개 층에 펼쳐진<br>단지 안 커뮤니티</h2>
+    <p class="sec-sub rv">가든(중정)을 마주한 피트니스부터 오픈도서관까지</p>
+    <div class="land">
+      <figure class="lf ph rv" data-ph="조경 이미지 자리 (img/garden.jpg)"><img src="img/garden.jpg" alt="리빙가든 조경" loading="lazy"><figcaption><b>리빙가든</b><span>축구장 약 4배 넓이의 조경, 사계절 산책 정원</span></figcaption></figure>
+      <figure class="lf ph rv" data-ph="물놀이터 이미지 자리 (img/playground.jpg)"><img src="img/playground.jpg" alt="물놀이터" loading="lazy"><figcaption><b>물놀이터</b><span>문 앞에서 즐기는 아이들의 놀이 공간</span></figcaption></figure>
+    </div>
+
+    <div class="floor rv">
+      <p class="floor-h"><i>지하 2층</i>함께 머무는 공간</p>
+      <div class="iso zoom ph light" data-ph="지하 2층 커뮤니티 (img/iso-b2.jpg)"><img src="img/iso-b2.jpg" alt="지하 2층 커뮤니티 배치 — 실내체육관, 키즈클럽, 라운지, 북클럽, 독서실" loading="lazy"></div>
+      <div class="fac">
+        <div class="fc"><h3>로비 · 라운지</h3><p>고급스러운 첫인상의 커뮤니티 입구</p></div>
+        <div class="fc"><h3>키즈존</h3><p>날씨 걱정 없는 아이들 놀이 공간</p></div>
+        <div class="fc"><h3>실내 체육관</h3><p>사계절 즐기는 실내 운동 공간</p></div>
+        <div class="fc"><h3>스터디룸 · 오픈도서관</h3><p>집중과 독서를 위한 공간</p></div>
+      </div>
+    </div>
+    <div class="floor rv">
+      <p class="floor-h"><i>지하 3층</i>운동 · 취미 · 손님맞이</p>
+      <div class="iso zoom ph light" data-ph="지하 3층 커뮤니티 (img/iso-b3.jpg)"><img src="img/iso-b3.jpg" alt="지하 3층 커뮤니티 배치 — 골프클럽, GX룸, 피트니스, 샤워실" loading="lazy"></div>
+      <div class="fac">
+        <div class="fc"><h3>피트니스 클럽</h3><p>GX룸 포함 · 라커룸 · 샤워시설</p></div>
+        <div class="fc"><h3>골프존</h3><p>스크린골프 시설</p></div>
+        <div class="fc"><h3>미팅룸 · 취미룸</h3><p>모임과 취미 활동을 단지 안에서</p></div>
+        <div class="fc"><h3>게스트하우스</h3><p>가족 · 손님 방문 시 편하게</p></div>
+      </div>
+    </div>
+    <p class="note">※ 커뮤니티 시설의 종류·구성은 계획 기준으로 실제 시공 시 변경될 수 있습니다.</p>
+
+    <h3 class="sub-h rv">살아보면 다른 특화 설계</h3>
+    <div class="spec">
+      <div class="sp rv"><i>84A</i><h4>주방특화형</h4><p>대형 주방 · 다이닝 공간</p></div>
+      <div class="sp rv"><i>84B</i><h4>거실특화형</h4><p>넓게 쓰는 거실 중심 설계</p></div>
+      <div class="sp rv"><i>84C</i><h4>수납특화형</h4><p>주방 팬트리 · 드레스룸</p></div>
+      <div class="sp rv"><i>84D</i><h4>다자녀특화형</h4><p>침실 활용을 높인 설계</p></div>
+      <div class="sp rv"><i>05</i><h4>조경 비율 약 40%</h4><p>축구장 약 4배 넓이의 조경 · 건폐율 13.18%</p></div>
+      <div class="sp rv"><i>06</i><h4>남향 위주 · 4BAY 판상형</h4><p>채광과 통풍을 고려한 배치 (일부 세대 제외)</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 7. 분양조건 ===================== -->
+<section class="sec alt" id="condition">
+  <div class="wrap">
+    <p class="eyebrow rv">06 · CONDITION</p>
+    <h2 class="sec-title rv">초기 자금 부담을<br>낮춘 계약 조건</h2>
+    <p class="sec-sub rv">계약금 500만원으로 시작</p>
+    <div class="flow">
+      <div class="fl hi rv"><div class="st">계약 시</div><div><b>500만원</b><span>계약금 정액제</span></div></div>
+      <div class="fl rv"><div class="st">중도금</div><div><b>이자후불제</b><span>(60%) 대출 알선</span></div></div>
+      <div class="fl rv"><div class="st">입주 시</div><div><b>잔금</b><span>2029년 5월 입주 예정</span></div></div>
+    </div>
+
+    <div class="cmp rv" role="table" aria-label="일반 분양 조건과 비교">
+      <div class="cmp-row hd" role="row"><div class="k">구분</div><div class="a">일반적인 분양 조건</div><div class="b">휴먼빌 퍼스트시티</div></div>
+      <div class="cmp-row" role="row"><div class="k">계약금</div><div class="a">공급금액의 10% 내외</div><div class="b">500만원 정액제<small>초기 자금 부담 최소화</small></div></div>
+      <div class="cmp-row" role="row"><div class="k">중도금</div><div class="a">유이자</div><div class="b">이자후불제<small>60% 대출 알선</small></div></div>
+      <div class="cmp-row" role="row"><div class="k">마감재</div><div class="a">유상 옵션 선택</div><div class="b">일부 기본 제공<small>아트월 타일 · 엔지니어드 스톤 등</small></div></div>
+      <div class="cmp-row" role="row"><div class="k">평형</div><div class="a">단지별 상이</div><div class="b">전 세대 84㎡<small>4가지 특화 타입</small></div></div>
+    </div>
+
+    <div class="extra-cond">
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><p>계약금 500만원 정액제<small>초기 자금 부담 최소화</small></p></div>
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><p>잔금은 입주 시 납부<small>2029년 5월 입주 예정</small></p></div>
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><p>세부 조건 1:1 상담<small>타입·동호수별 조건은 상담 시 확인</small></p></div>
+    </div>
+    <p class="note">※ 입주자모집공고(2025.10) 기준이며 '일반적인 분양 조건'은 비교를 위한 통상적인 예시입니다. 현재 적용 조건은 계약 전 분양 상담과 입주자모집공고를 통해 반드시 확인하시기 바랍니다.</p>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <p>계약금 500만원 정액제,<br>지금 조건 그대로 상담받으세요<small>남겨주시면 담당자가 확인 후 연락드려요</small></p>
+    <div class="btns"><a href="#apply" class="btn btn-cta" data-cta="strip2">관심고객 등록</a><a href="tel:16684270" class="btn btn-ghost" data-call>전화상담</a></div>
+  </div>
+</div>
+
+<!-- ===================== 8. 평면 · 세대정보 ===================== -->
+<section class="sec" id="types">
+  <div class="wrap">
+    <p class="eyebrow rv">07 · UNIT PLAN</p>
+    <h2 class="sec-title rv">같은 84㎡,<br>4가지 라이프스타일</h2>
+    <p class="sec-sub rv">타입을 눌러 평면과 세대 정보를 확인하세요</p>
+    <div class="tabs" id="tabs" role="tablist" aria-label="평면 타입"></div>
+    <div class="plan">
+      <div class="plan-img zoom" id="tp-img"></div>
+      <div class="plan-info">
+        <h3 id="tp-name"></h3>
+        <span class="pt" id="tp-tag"></span>
+        <p class="pd" id="tp-desc"></p>
+        <dl>
+          <dt>전용면적</dt><dd id="tp-area"></dd>
+          <dt>공급면적</dt><dd id="tp-supply"></dd>
+          <dt>공급세대</dt><dd id="tp-unit"></dd>
+        </dl>
+        <a href="#apply" class="btn btn-cta" id="tp-cta" data-cta="plan">이 타입 상담받기</a>
+      </div>
+    </div>
+    <p class="note">※ 발코니 확장형 기준 · 평면도는 이해를 돕기 위한 것으로 실제와 다를 수 있습니다. 평면도를 누르면 크게 볼 수 있어요.</p>
+  </div>
+</section>
+
+<!-- ===================== 9. FAQ ===================== -->
+<section class="sec alt" id="faq">
+  <div class="wrap" style="max-width:820px">
+    <p class="eyebrow rv">08 · FAQ</p>
+    <h2 class="sec-title rv">자주 묻는 질문</h2>
+    <p class="sec-sub rv">상담 전에 가장 많이 물어보시는 내용이에요</p>
+    <div class="faq">
+      <details class="rv"><summary>계약금은 얼마인가요?</summary><div class="ans"><b>계약금 500만원 정액제</b>입니다. 현재 적용 조건은 상담 시 확인해 주세요.</div></details>
+      <details class="rv"><summary>중도금 이자는 어떻게 되나요?</summary><div class="ans">중도금 60%는 <b>이자후불제</b> 조건으로 대출 알선을 지원합니다.</div></details>
+      <details class="rv"><summary>평형은 어떻게 되나요?</summary><div class="ans">전 세대 <b>전용 84㎡</b>이며 주방·거실·수납·다자녀 특화 <b>4개 타입</b>입니다.</div></details>
+      <details class="rv"><summary>입주는 언제인가요?</summary><div class="ans"><b>2029년 5월 입주 예정</b>입니다. 잔금은 입주 시 납부합니다.</div></details>
+      <details class="rv"><summary>기본으로 제공되는 품목이 있나요?</summary><div class="ans">타입에 따라 <b>거실 아트월 타일, 주방 엔지니어드 스톤 상판, 침실 붙박이장(발코니 확장 시)</b> 등이 기본 제공됩니다. 세부 품목은 상담 시 확인해 주세요.</div></details>
+      <details class="rv"><summary>커뮤니티 시설은 무엇이 있나요?</summary><div class="ans">지하 2층에 <b>로비·라운지, 키즈존, 실내 체육관, 스터디룸, 오픈도서관</b>, 지하 3층에 <b>피트니스 클럽(GX룸), 골프존, 미팅룸·취미룸, 게스트하우스</b>가 계획되어 있습니다.</div></details>
+      <details class="rv"><summary>견본주택은 예약하고 가야 하나요?</summary><div class="ans">예약 없이도 방문하실 수 있지만, <b>사전 예약 고객은 우선 상담</b>으로 안내해 드립니다. 견본주택: 충청남도 아산시 배방읍 장재리 1628</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 10. 마지막 관심고객 등록 ===================== -->
+<section class="final" id="apply">
+  <div class="wrap final-grid">
+    <div>
+      <p class="eyebrow rv">VISIT RESERVATION</p>
+      <h2 class="sec-title rv">관심고객 등록하고<br><b>우선 상담</b> 받으세요</h2>
+      <ol class="steps">
+        <li class="rv"><i>1</i><div><b>관심고객 등록</b><span>이름 · 휴대폰 · 방문 희망 시간을 남겨주세요</span></div></li>
+        <li class="rv"><i>2</i><div><b>담당자 확인 연락</b><span>담당자가 일정 확인 후 연락드립니다</span></div></li>
+        <li class="rv"><i>3</i><div><b>견본주택 방문</b><span>유니트 관람과 1:1 맞춤 상담</span></div></li>
+      </ol>
+      <div class="final-tel rv">
+        <div><small>분양문의 대표번호</small><b>1668-4270</b></div>
+        <a href="tel:16684270" class="btn btn-cta" data-call>전화걸기</a>
+      </div>
+    </div>
+    <div class="form-card rv" data-form="final"></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="brand">천안 휴먼빌 퍼스트시티</p>
+    <p>시공 : 일신건영(주) &nbsp;|&nbsp; 분양문의 : <a href="tel:16684270">1668-4270</a></p>
+    <p>견본주택 : 충청남도 아산시 배방읍 장재리 1628 &nbsp;|&nbsp; 사업지 : 충청남도 천안시 서북구 부대동 일원</p>
+    <p><a href="/privacy">개인정보처리방침</a></p>
+    <p style="margin-top:14px">※ 본 홈페이지의 CG·이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 있을 수 있습니다. 교통·학교·개발 계획 등은 관계기관 사정에 따라 변경될 수 있습니다. 세부 사항은 입주자모집공고 및 계약서를 기준으로 합니다.</p>
+  </div>
+</footer>
+
+<div class="bar">
+  <a href="tel:16684270" class="btn btn-dark" data-call>전화상담</a>
+  <a href="#apply" class="btn btn-cta" data-cta="bar">관심고객 등록</a>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-label="이미지 크게 보기"><button type="button" aria-label="닫기">×</button><img alt=""></div>
+
+<template id="formTpl">
+  <form novalidate>
+    <div class="fbody">
+      <div class="ft"><h3>관심고객 등록</h3><span class="tag-live">방문예약 접수중</span></div>
+      <p class="fs">남겨주시면 담당자가 확인 후 연락드려요</p>
+      <label class="field"><span>이름 <em>*</em></span><input type="text" name="name" placeholder="홍길동" autocomplete="name" maxlength="20"></label>
+      <label class="field"><span>휴대폰 <em>*</em></span><input type="tel" name="phone" placeholder="010-0000-0000" inputmode="numeric" autocomplete="tel"></label>
+      <fieldset class="field">
+        <legend>견본주택 방문시간 <i>(선택)</i></legend>
+        <div class="row2">
+          <input type="date" name="date" aria-label="방문 희망 날짜">
+          <select name="time" aria-label="방문 희망 시간"><option value="">시간 선택</option></select>
+        </div>
+      </fieldset>
+      <input type="hidden" name="type" value="">
+      <input type="text" name="hp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="agree">
+        <input type="checkbox" name="agree" id="">
+        <label>[필수] 개인정보 수집·이용 동의</label>
+        <button type="button" class="agree-tg" aria-expanded="false">보기</button>
+      </div>
+      <dl class="agree-detail">
+        <dt>수집 목적</dt><dd>분양 상담 및 견본주택 방문 예약 안내</dd>
+        <dt>수집 항목</dt><dd>이름, 휴대폰 번호, 방문 희망 일시(선택), 관심 타입(선택)</dd>
+        <dt>자동 수집</dt><dd>접수 시각, 유입 경로(광고 매체·캠페인 등)</dd>
+        <dt>보유 기간</dt><dd>상담 종료 후 1년 (동의 철회 시 즉시 파기)</dd>
+        <dt>동의 거부</dt><dd>동의하지 않으실 수 있으며, 이 경우 온라인 등록 대신 대표번호(1668-4270)로 문의해 주세요. <a href="/privacy" target="_blank" rel="noopener">개인정보처리방침 전문 보기</a></dd>
+      </dl>
+      <p class="err" role="alert"></p>
+      <button type="submit" class="btn btn-cta">관심고객 등록하기</button>
+      <p class="tel-line">급하시면 <a href="tel:16684270" data-call>1668-4270</a> 바로 전화상담</p>
+    </div>
+    <div class="done" aria-live="polite">
+      <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <h3>관심고객 등록이 접수되었어요</h3>
+      <p>담당자가 확인 후 빠르게 연락드리겠습니다.</p>
+      <a href="tel:16684270" class="btn btn-dark" data-call>지금 바로 전화상담</a>
+    </div>
+  </form>
+</template>
+
+<script>
+// ===== 휴먼빌 전용 구글 시트 접수 주소 (새 시트 배포 후 받은 /exec 주소를 따옴표 안에 넣으세요) =====
+const SHEET_URL='';
+const TEL='1668-4270';
+
+// ===== 평면 타입 데이터 (입주자모집공고 · 공식 보도자료 기준) =====
+const TYPES=[
+  {id:'84A',tag:'주방특화형',desc:'대형 주방과 다이닝 공간을 강조한 타입',area:'84.99㎡',supply:'114.83㎡ (약 35평)',unit:310},
+  {id:'84B',tag:'거실특화형',desc:'거실을 넓게 쓰는 개방감 중심 타입',area:'84.99㎡',supply:'115.03㎡ (약 35평)',unit:275},
+  {id:'84C',tag:'수납특화형',desc:'주방 팬트리·드레스룸 등 수납을 강화한 타입',area:'84.99㎡',supply:'115.49㎡ (약 35평)',unit:335},
+  {id:'84D',tag:'다자녀특화형',desc:'자녀 방 활용을 고려한 침실 중심 타입',area:'84.99㎡',supply:'115.91㎡ (약 35평)',unit:621}
+];
+const $=s=>document.querySelector(s);
+let chosenType='';
+
+// ===== 이미지가 없으면 자리 라벨만 보이게 =====
+function wireImg(im){
+  const box=im.closest('.ph');
+  const ok=()=>{if(box){box.classList.add('has');box.classList.remove('ph','light')}else if(im.parentElement.classList.contains('zoom'))im.parentElement.classList.add('has')};
+  const bad=()=>im.remove();
+  if(im.complete){im.naturalWidth?ok():bad()}else{im.addEventListener('load',ok);im.addEventListener('error',bad)}
+}
+document.querySelectorAll('.ph img').forEach(wireImg);
+
+// ===== 폼 2개 생성 =====
+const tpl=$('#formTpl');
+const today=(()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')})();
+document.querySelectorAll('[data-form]').forEach((box,i)=>{
+  box.appendChild(tpl.content.cloneNode(true));
+  const f=box.querySelector('form');f.dataset.pos=box.dataset.form;
+  const cb=f.querySelector('input[name=agree]'),lbl=f.querySelector('.agree label');
+  cb.id='agree-'+i;lbl.htmlFor=cb.id;
+  f.querySelector('input[name=date]').min=today;
+  const sel=f.querySelector('select[name=time]');
+  sel.add(new Option('상관없음','상관없음'));
+  for(let m=600;m<=1080;m+=30){const v=String(Math.floor(m/60)).padStart(2,'0')+':'+(m%60?'30':'00');sel.add(new Option(v,v))}
+  const ph=f.querySelector('input[name=phone]');
+  ph.addEventListener('input',()=>{const n=ph.value.replace(/\D/g,'').slice(0,11);ph.value=n.length<4?n:n.length<8?n.slice(0,3)+'-'+n.slice(3):n.slice(0,3)+'-'+n.slice(3,7)+'-'+n.slice(7)});
+  const tg=f.querySelector('.agree-tg'),dt=f.querySelector('.agree-detail');
+  tg.addEventListener('click',()=>{const o=dt.classList.toggle('open');tg.setAttribute('aria-expanded',o);tg.textContent=o?'닫기':'보기'});
+  f.addEventListener('submit',onSubmit);
+});
+
+// ===== 광고 유입 정보 (UTM) 저장 =====
+const UTM_KEYS=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'];
+(function(){try{const q=new URLSearchParams(location.search);const o={};UTM_KEYS.forEach(k=>{if(q.get(k))o[k]=q.get(k)});
+  if(Object.keys(o).length)sessionStorage.setItem('hm_utm',JSON.stringify(o));
+  if(!sessionStorage.getItem('hm_ref'))sessionStorage.setItem('hm_ref',document.referrer||'직접 방문');}catch(_){}})();
+function utmInfo(){try{return {utm:JSON.parse(sessionStorage.getItem('hm_utm')||'{}'),ref:sessionStorage.getItem('hm_ref')||''}}catch(_){return {utm:{},ref:''}}}
+
+// ===== 제출 → 구글 시트 =====
+let sending=false;
+async function onSubmit(e){
+  e.preventDefault();
+  if(sending)return;
+  const f=e.currentTarget,err=f.querySelector('.err'),el=f.elements;
+  const name=el['name'].value.trim(),phone=el['phone'].value,digits=phone.replace(/\D/g,'');
+  let msg='';
+  if(!name)msg='이름을 입력해 주세요.';
+  else if(!/^01[016789]\d{7,8}$/.test(digits))msg='휴대폰 번호를 정확히 입력해 주세요.';
+  else if(!el['agree'].checked)msg='개인정보 수집·이용에 동의해 주세요.';
+  if(msg){err.textContent=msg;err.style.display='block';return}
+  err.style.display='none';
+  if(el['hp'].value)return;
+  if(!SHEET_URL){err.textContent='온라인 접수 준비 중입니다. '+TEL+'로 전화 주시면 바로 안내해 드려요.';err.style.display='block';return}
+
+  const {utm,ref}=utmInfo();
+  const data=new URLSearchParams({
+    name,phone,
+    type:chosenType||el['type'].value||'',
+    date:el['date'].value||'',
+    time:el['time'].value||'',
+    agree:'동의',
+    source:utm.utm_source||'',medium:utm.utm_medium||'',campaign:utm.utm_campaign||'',
+    content:utm.utm_content||'',term:utm.utm_term||'',
+    clickid:utm.fbclid?('fb:'+utm.fbclid):(utm.gclid?('g:'+utm.gclid):''),
+    referrer:ref,page:location.href.split('?')[0]+'#form-'+f.dataset.pos,ua:navigator.userAgent
+  });
+  const btn=f.querySelector('button[type=submit]');
+  sending=true;btn.disabled=true;btn.textContent='접수 중...';
+  try{await fetch(SHEET_URL,{method:'POST',mode:'no-cors',body:data});}
+  catch(_){
+    sending=false;btn.disabled=false;btn.textContent='관심고객 등록하기';
+    err.textContent='접수 중 문제가 생겼어요. 잠시 후 다시 시도하시거나 '+TEL+'로 전화 주세요.';err.style.display='block';return;
+  }
+  document.querySelectorAll('[data-form] form').forEach(x=>{x.querySelector('.fbody').style.display='none';x.querySelector('.done').style.display='block'});
+  sending=false;
+  try{if(window.fbq)fbq('track','Lead');if(window.gtag)gtag('event','generate_lead');}catch(_){}
+}
+
+document.querySelectorAll('[data-call]').forEach(a=>a.addEventListener('click',()=>{try{if(window.fbq)fbq('track','Contact');if(window.gtag)gtag('event','click_call');}catch(_){}}));
+
+// ===== 평면 탭 =====
+const tabs=$('#tabs');
+function showType(t){
+  tabs.querySelectorAll('.tab').forEach(b=>{const on=b.dataset.id===t.id;b.classList.toggle('on',on);b.setAttribute('aria-selected',on)});
+  $('#tp-name').innerHTML=t.id+'<small>TYPE</small>';
+  $('#tp-tag').textContent=t.tag;
+  $('#tp-desc').textContent=t.desc;
+  $('#tp-unit').textContent=t.unit+'세대';
+  $('#tp-area').textContent=t.area;$('#tp-supply').textContent=t.supply;
+  const box=$('#tp-img');box.classList.remove('has');
+  box.innerHTML='<div class="pbox ph light" data-ph="'+t.id+' 평면도 자리 (img/plan_'+t.id+'.jpg)"><img src="img/plan_'+t.id+'.jpg" alt="'+t.id+' 평면도"></div>';
+  wireImg(box.querySelector('img'));
+  $('#tp-cta').dataset.type=t.id;
+}
+TYPES.forEach(t=>{const i=new Image();i.src='img/plan_'+t.id+'.jpg'});
+TYPES.forEach(t=>{const b=document.createElement('button');b.type='button';b.className='tab';b.setAttribute('role','tab');b.dataset.id=t.id;b.textContent=t.id+' '+t.tag;b.addEventListener('click',()=>showType(t));tabs.appendChild(b)});
+showType(TYPES[0]);
+$('#tp-cta').addEventListener('click',e=>{chosenType=e.currentTarget.dataset.type});
+
+// ===== 이미지 크게 보기 =====
+const lb=$('#lb'),lbImg=lb.querySelector('img');
+document.addEventListener('click',e=>{
+  const z=e.target.closest('.zoom');
+  if(z){const im=z.querySelector('img');if(!im||!im.naturalWidth)return;lbImg.src=im.src;lbImg.alt=im.alt;lb.classList.add('open');return}
+  if(e.target.closest('#lb'))lb.classList.remove('open');
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+
+// ===== 스크롤 등장 효과 =====
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+}else document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
+</script>
+</body>
+</html>
