@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>브레인시티 앤네이처 미래도 | 관심고객 등록·방문예약</title>
+<meta name="description" content="입주까지 0원, 입주축하금 500만원. 삼성전자 평택캠퍼스 직주근접 브레인시티 1,413세대 대단지. 브레인시티 앤네이처 미래도 분양 정보와 견본주택 방문예약.">
+<meta name="theme-color" content="#0F2F2C">
+<meta property="og:title" content="브레인시티 앤네이처 미래도 | 입주까지 0원 · 입주축하금 500만원">
+<meta property="og:description" content="평택 브레인시티 1,413세대 · 전용 59·84㎡ · 2028년 7월 입주 예정 · 전 세대 세대창고 무상">
+<meta property="og:image" content="img/hero.jpg">
+<!-- ▼ Meta 픽셀: 픽셀 ID를 받으면 아래 주석을 풀고 YOUR_PIXEL_ID를 바꿔 넣으세요 (신청 완료 시 Lead, 전화 클릭 시 Contact 이벤트는 이미 연결돼 있음)
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','YOUR_PIXEL_ID');fbq('track','PageView');</script>
+-->
+<style>
+/* 전체 폰트: G마켓 산스 (무료 상업용 · 눈누 배포) */
+@font-face{font-family:"GmarketSans";src:local("Gmarket Sans TTF Light"),local("GmarketSansTTFLight"),local("Gmarket Sans Light"),local("GmarketSansLight"),url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");font-weight:300;font-display:swap}
+@font-face{font-family:"GmarketSans";src:local("Gmarket Sans TTF Medium"),local("GmarketSansTTFMedium"),local("Gmarket Sans Medium"),local("GmarketSansMedium"),url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");font-weight:500;font-display:swap}
+@font-face{font-family:"GmarketSans";src:local("Gmarket Sans TTF Bold"),local("GmarketSansTTFBold"),local("Gmarket Sans Bold"),local("GmarketSansBold"),url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");font-weight:700;font-display:swap}
+
+:root{
+  /* THEME:START — 앤네이처 그린 (숲 청록 + 라임 + 오렌지 CTA) */
+  --ink:#0F2F2C;        /* 깊은 숲 청록 */
+  --ink-rgb:15,47,44;
+  --lake:#1E6B5C;       /* 숲 초록 */
+  --lake-2:#1E6B5C;
+  --sky:#C9E265;        /* 라임 — 어두운 배경 위 강조 */
+  --mist:#E3EFE8;
+  --cream:#F4F6F1;
+  --gold:#C9E265;
+  --gold-l:#D6EC7E;
+  --red:#FF6A2B;        /* 오렌지 — 밝은 배경 위 강조 · 신청 버튼 */
+  --cta:#FF6A2B;
+  --cta-d:#E3551A;
+  --cta-rgb:255,106,43;
+  --cta-soft:#FFE7DC;
+  --b-soft:#EAF4EE;
+  --foot:#0A211F;
+  /* THEME:END */
+  --paper:#FFFFFF;
+  --text:var(--ink);
+  --sub:#5B6B66;
+  --line:rgba(var(--ink-rgb),.12);
+  --head:"GmarketSans","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --body:"GmarketSans","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --r:18px;
+  --bar:64px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+html,body{overflow-x:hidden}
+body{font-family:var(--body);color:var(--text);background:var(--cream);line-height:1.6;word-break:keep-all;-webkit-font-smoothing:antialiased;padding-bottom:calc(var(--bar) + env(safe-area-inset-bottom,0px))}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.h{font-family:var(--head);font-weight:900;letter-spacing:-.025em;line-height:1.22}
+.note{font-size:12px;color:var(--sub);line-height:1.55;margin-top:14px}
+
+/* ===== 버튼 ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:14px 22px;border:0;border-radius:999px;font-weight:800;font-size:16px;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s;white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn-cta{background:var(--cta);color:#fff;box-shadow:0 10px 24px -10px rgba(var(--cta-rgb),.75)}
+.btn-cta:hover{background:var(--cta-d)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px;flex:0 0 auto}
+
+/* ===== 헤더 ===== */
+.top{position:sticky;top:0;z-index:50;background:rgba(var(--ink-rgb),.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff}
+.top .wrap{display:flex;align-items:center;height:56px;gap:10px}
+.brand{font-family:var(--head);font-weight:900;font-size:clamp(13.5px,3.9vw,17px);letter-spacing:-.03em;display:flex;align-items:center;gap:7px;white-space:nowrap;min-width:0}
+.brand i{flex:0 0 auto;width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(var(--cta-rgb),.3)}
+.nav{display:none;gap:24px;margin-left:auto;font-size:14px;font-weight:600;color:rgba(255,255,255,.78)}
+.nav a:hover{color:#fff}
+.top-tel{margin-left:auto;flex:0 0 auto;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;font-weight:800;font-size:clamp(12.5px,3.5vw,15px);line-height:1;color:var(--ink);background:var(--gold);padding:8px 12px;border-radius:999px;box-shadow:0 4px 12px -6px rgba(0,0,0,.5)}
+.top-tel svg{width:14px;height:14px;flex:0 0 auto}
+
+/* ===== 히어로 ===== */
+.hero{position:relative;color:#fff;background:var(--ink);overflow:hidden}
+.hero-bg{position:absolute;left:0;right:0;top:0;height:560px}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:62% 60%}
+.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(var(--ink-rgb),.78) 0%,rgba(var(--ink-rgb),.5) 40%,rgba(var(--ink-rgb),.15) 64%,rgba(var(--ink-rgb),.4) 84%,var(--ink) 100%)}
+.hero .wrap{position:relative;display:grid;gap:28px;padding-top:30px;padding-bottom:30px}
+.eyebrow-pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);color:#fff}
+.eyebrow-pill b{color:var(--gold-l)}
+.chg{display:inline-block;font-size:12px;font-weight:800;background:var(--cta);color:#fff;padding:4px 10px;border-radius:6px;margin-right:6px;vertical-align:middle}
+.hero h1{font-size:clamp(34px,9.4vw,54px);margin:16px 0 14px;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.hero-copy{min-height:470px}
+.hero .lead{text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.hero h1 .sm{display:block;font-size:.5em;font-weight:800;letter-spacing:-.01em;color:var(--gold-l);margin-bottom:8px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .lead{font-size:clamp(15px,3.9vw,19px);font-weight:600;color:rgba(255,255,255,.9);line-height:1.55}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:20px 0 22px}
+.trio div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:12px 8px;text-align:center}
+.trio b{display:block;font-family:var(--head);font-weight:900;font-size:clamp(15px,4.3vw,24px);white-space:nowrap;color:var(--gold-l);line-height:1.2}
+.trio span{font-size:12px;font-weight:600;color:rgba(255,255,255,.78);line-height:1.35;display:block;margin-top:3px}
+.hero-btns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.hero-btns .btn{padding:14px 10px;font-size:15.5px}
+
+/* ===== 폼 카드 ===== */
+.form-card{background:var(--paper);color:var(--text);border-radius:22px;padding:24px 20px;box-shadow:0 30px 60px -30px rgba(0,0,0,.55)}
+.form-card .ft{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:4px}
+.form-card h3{font-family:var(--head);font-weight:900;font-size:22px;letter-spacing:-.02em;line-height:1.3}
+.form-card .fs{font-size:13.5px;color:var(--sub);font-weight:600;margin-bottom:16px}
+.tag-live{flex:0 0 auto;font-size:11.5px;font-weight:800;color:var(--cta);background:var(--cta-soft);padding:4px 9px;border-radius:999px}
+.field{display:block;margin-bottom:12px;border:0}
+.field>span,.field legend{display:block;font-size:13px;font-weight:700;margin-bottom:6px;color:var(--text)}
+.field em{font-style:normal;color:var(--cta);font-weight:800}
+.field i{font-style:normal;color:var(--sub);font-weight:600}
+.field input,.field select{width:100%;height:52px;border:1.5px solid var(--line);border-radius:12px;padding:0 14px;font-size:16px;background:#FAFAF6;transition:border .15s,background .15s}
+.field input:focus,.field select:focus{outline:0;border-color:var(--lake-2);background:#fff}
+.row2{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:8px}
+.agree{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;padding:12px 0 4px;border-top:1px solid var(--line);margin-top:4px}
+.agree input{width:20px;height:20px;accent-color:var(--lake);flex:0 0 auto}
+.agree button{margin-left:auto;border:0;background:none;font-size:13px;font-weight:700;color:var(--sub);text-decoration:underline;cursor:pointer;padding:4px}
+.agree-detail{display:none;background:var(--cream);border-radius:12px;padding:12px 14px;font-size:12.5px;color:var(--sub);line-height:1.6;margin-top:8px}
+.agree-detail.open{display:block}
+.agree-detail dt{font-weight:800;color:var(--text);float:left;width:64px}
+.agree-detail dd{margin-left:64px;margin-bottom:4px}
+.agree-detail a{text-decoration:underline;font-weight:700}
+.err{display:none;color:#C2321B;font-size:13.5px;font-weight:700;margin-top:10px}
+.form-card .btn-cta{width:100%;margin-top:14px;font-size:17px;min-height:58px}
+.form-card .tel-line{text-align:center;font-size:13.5px;color:var(--sub);font-weight:600;margin-top:12px}
+.form-card .tel-line a{color:var(--lake);font-weight:800}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.done{display:none;text-align:center;padding:24px 4px}
+.done .ok{width:60px;height:60px;border-radius:50%;background:var(--mist);color:var(--lake);display:grid;place-items:center;margin:0 auto 14px}
+.done .ok svg{width:30px;height:30px}
+.done h3{margin-bottom:6px}
+.done p{font-size:14.5px;color:var(--sub);font-weight:600}
+.done .btn{margin-top:18px}
+
+/* ===== 핵심 수치 바 ===== */
+.facts{background:var(--ink);color:#fff;border-top:1px solid rgba(255,255,255,.08)}
+.facts ul{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.1)}
+.facts li{background:var(--ink);padding:16px 8px;text-align:center}
+.facts b{display:block;font-family:var(--head);font-weight:900;font-size:clamp(14.5px,4vw,24px);white-space:nowrap;color:#fff;line-height:1.25}
+.facts span{font-size:12px;color:rgba(255,255,255,.62);font-weight:600}
+.facts li:nth-child(n+4){display:none}
+
+/* ===== 섹션 공통 ===== */
+.sec{padding:72px 0}
+.sec.alt{background:var(--paper)}
+.sec.dark{background:var(--ink);color:#fff}
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:800;letter-spacing:.16em;color:var(--lake-2);margin-bottom:12px}
+.eyebrow:before{content:"";width:22px;height:2px;background:var(--red)}
+.dark .eyebrow,.benefit .eyebrow,.final .eyebrow{color:var(--sky)}
+.sec-title{font-family:var(--head);font-weight:900;font-size:clamp(26px,6.6vw,40px);letter-spacing:-.025em;line-height:1.28}
+.sec-sub{font-size:15.5px;color:var(--sub);font-weight:600;margin:10px 0 32px}
+.dark .sec-sub{color:rgba(255,255,255,.68)}
+
+/* ===== 혜택 ===== */
+.benefit{background:linear-gradient(180deg,var(--ink) 0%,var(--lake) 100%);color:#fff;padding:60px 0 64px}
+.benefit-top{text-align:center}
+.benefit-top .sec-title b{color:var(--gold)}
+.benefit-sum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:28px 0 22px}
+.benefit-sum div{min-width:0;background:rgba(255,255,255,.07);border:1px solid rgba(201,226,101,.45);border-radius:var(--r);padding:20px 4px;text-align:center}
+.benefit-sum small{display:block;font-size:12.5px;color:rgba(255,255,255,.65);font-weight:600}
+.benefit-sum b{display:block;font-family:var(--head);font-weight:900;font-size:clamp(17px,5vw,34px);white-space:nowrap;letter-spacing:-.03em;color:var(--gold-l);line-height:1.2;margin:4px 0}
+.benefit-sum span{font-size:13px;font-weight:700;line-height:1.35;display:block}
+.benefit .note{color:rgba(255,255,255,.6);text-align:center}
+
+/* ===== 프리미엄 ===== */
+.prem{display:grid;gap:12px}
+.pc{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px 20px 22px 76px;min-height:104px}
+.pc .no{position:absolute;left:20px;top:20px;font-family:var(--head);font-weight:900;font-size:34px;line-height:1;color:var(--red)}
+.pc h3{font-family:var(--head);font-weight:900;font-size:19px;letter-spacing:-.02em;line-height:1.35}
+.pc p{font-size:14.5px;color:var(--sub);font-weight:600;margin-top:4px;line-height:1.5}
+.pc.feat{padding:0;overflow:hidden;background:var(--ink);color:#fff;border:0;min-height:0}
+.pc.feat img{width:100%;height:220px;object-fit:cover;object-position:50% 45%}
+.pc.feat .in{position:relative;padding:20px 20px 22px 76px}
+.pc.feat .no{top:18px;color:var(--sky)}
+.pc.feat p{color:rgba(255,255,255,.75)}
+
+/* ===== CTA 띠 ===== */
+.strip{background:var(--lake);color:#fff}
+.strip .wrap{display:flex;flex-direction:column;gap:14px;padding-top:26px;padding-bottom:26px}
+.strip p{font-family:var(--head);font-weight:900;font-size:clamp(19px,5vw,26px);letter-spacing:-.02em;line-height:1.35}
+.strip p small{display:block;font-family:var(--body);font-size:14px;font-weight:600;color:rgba(255,255,255,.75);letter-spacing:0;margin-top:4px}
+.strip .btns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+
+/* ===== 사업개요 ===== */
+.ov{display:grid;gap:20px}
+.ov-img{border-radius:var(--r);overflow:hidden;position:relative;background:var(--ink)}
+.ov-img img{width:100%;aspect-ratio:16/12;object-fit:contain}
+.cap{font-size:11.5px;color:var(--sub);margin-top:8px}
+.tbl{width:100%;border-collapse:collapse;background:var(--paper);border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.tbl th,.tbl td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);font-size:14.5px;vertical-align:top}
+.tbl tr:last-child th,.tbl tr:last-child td{border-bottom:0}
+.tbl th{width:30%;background:var(--mist);font-weight:800;color:var(--lake);white-space:nowrap}
+.tbl td{font-weight:600}
+.tbl td small{display:block;font-size:12.5px;color:var(--sub);font-weight:600}
+.zoom{cursor:zoom-in;position:relative}
+.zoom:after{content:"크게 보기 ＋";position:absolute;right:10px;bottom:10px;background:rgba(var(--ink-rgb),.8);color:#fff;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px}
+.siteplan{margin-top:20px;border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid var(--line)}
+.mix{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:12px}
+.mix div{background:var(--cream);border-radius:12px;padding:10px 4px;text-align:center}
+.mix b{display:block;font-family:var(--head);font-weight:900;font-size:clamp(14px,4vw,19px);white-space:nowrap;color:var(--lake)}
+.mix span{font-size:12px;font-weight:700;color:var(--sub);white-space:nowrap}
+
+/* ===== 입지 ===== */
+.loc-map{border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid var(--line)}
+.transit{display:grid;gap:12px;margin-top:20px}
+.tr{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px}
+.tr-h{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;margin-bottom:12px}
+.tr-h .ln{font-size:11.5px;font-weight:800;padding:3px 9px;border-radius:999px;color:#fff;background:var(--lake)}
+.tr-h .ln.c2{background:#1C4E9A}.tr-h .ln.c3{background:#B4182D}
+.tr ul{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.tr li{background:var(--cream);border-radius:12px;padding:10px 4px;text-align:center}
+.tr li b{display:block;font-family:var(--head);font-weight:900;font-size:clamp(16px,4.6vw,21px);white-space:nowrap;color:var(--lake);line-height:1.2}
+.tr li span{font-size:12.5px;font-weight:700;color:var(--sub);white-space:nowrap}
+
+/* ===== 생활환경 ===== */
+.life-hero{position:relative;border-radius:var(--r);overflow:hidden;margin-bottom:14px}
+.life-hero img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 40%}
+.life-hero div{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 16px;background:linear-gradient(transparent,rgba(var(--ink-rgb),.94))}
+.life-hero b{font-family:var(--head);font-weight:900;font-size:21px;letter-spacing:-.02em;display:block}
+.life-hero span{font-size:13.5px;color:rgba(255,255,255,.82);font-weight:600}
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:14px}
+.duo figure{position:relative;border-radius:14px;overflow:hidden;margin:0}
+.duo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.duo figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px 10px 9px;background:linear-gradient(transparent,rgba(var(--ink-rgb),.92));font-size:13px;font-weight:800;line-height:1.35}
+.duo figcaption small{display:block;font-weight:600;font-size:11.5px;color:rgba(255,255,255,.75)}
+.life{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.lc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:18px 16px}
+.lc em{font-style:normal;font-size:11.5px;letter-spacing:.16em;font-weight:800;color:var(--gold)}
+.lc h3{font-family:var(--head);font-weight:900;font-size:18px;margin:4px 0 8px}
+.lc li{list-style:none;font-size:13.5px;color:rgba(255,255,255,.8);font-weight:600;line-height:1.5;padding-left:10px;position:relative;margin-bottom:3px}
+.lc li:before{content:"";position:absolute;left:0;top:.65em;width:4px;height:4px;border-radius:50%;background:var(--gold)}
+.lc.wide{grid-column:1/-1}
+.dark .note{color:rgba(255,255,255,.55)}
+
+/* ===== 커뮤니티 ===== */
+.land{display:grid;gap:12px}
+.lf{position:relative;border-radius:var(--r);overflow:hidden;margin:0;background:var(--ink)}
+.lf img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.lf figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 16px;background:linear-gradient(transparent,rgba(var(--ink-rgb),.9));color:#fff}
+.lf b{display:block;font-family:var(--head);font-weight:900;font-size:20px;letter-spacing:-.02em}
+.lf span{font-size:13.5px;font-weight:500;color:rgba(255,255,255,.88)}
+.fac{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+.fc{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 14px;text-align:left}
+.fc i{display:block;font-style:normal;font-family:var(--head);font-weight:900;font-size:12px;letter-spacing:.12em;color:var(--red);margin-bottom:6px}
+.fc h3{font-family:var(--head);font-weight:900;font-size:16px;letter-spacing:-.02em;line-height:1.35}
+.fc p{font-size:12.5px;color:var(--sub);font-weight:600;line-height:1.45;margin-top:3px}
+.extra{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.extra span{font-size:13px;font-weight:700;padding:7px 13px;border-radius:999px;background:var(--mist);color:var(--lake)}
+.mall{margin-top:36px;display:grid;gap:0;border-radius:var(--r);overflow:hidden;background:var(--ink);color:#fff}
+.mall img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.mall .in{padding:22px 20px 24px}
+.mall em{font-style:normal;font-size:11.5px;letter-spacing:.16em;font-weight:800;color:var(--gold)}
+.mall h3{font-family:var(--head);font-weight:900;font-size:22px;margin:6px 0 12px;letter-spacing:-.02em}
+.mall li{list-style:none;font-size:14px;font-weight:600;color:rgba(255,255,255,.82);padding:9px 0;border-top:1px solid rgba(255,255,255,.12)}
+.mall li b{color:#fff;display:block;font-weight:800}
+.spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px}
+.sp{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 16px}
+.sp i{font-style:normal;font-family:var(--head);font-weight:900;font-size:13px;color:var(--red)}
+.sp h4{font-family:var(--head);font-weight:900;font-size:16.5px;letter-spacing:-.02em;margin:2px 0 4px;line-height:1.35}
+.sp p{font-size:13px;color:var(--sub);font-weight:600;line-height:1.45}
+.sub-h{font-family:var(--head);font-weight:900;font-size:20px;letter-spacing:-.02em;margin-top:40px}
+
+/* ===== 분양조건 ===== */
+.flow{display:grid;gap:10px}
+.fl{display:flex;align-items:center;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
+.fl .st{flex:0 0 auto;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--mist);color:var(--lake);font-size:12.5px;font-weight:800;text-align:center;line-height:1.2}
+.fl b{font-family:var(--head);font-weight:900;font-size:22px;color:var(--text);letter-spacing:-.02em;display:block;line-height:1.25}
+.fl span{font-size:13.5px;color:var(--sub);font-weight:600}
+.fl.hi{background:var(--ink);color:#fff;border:0}
+.fl.hi .st{background:var(--gold);color:var(--ink)}
+.fl.hi b{color:var(--gold-l)}
+.fl.hi span{color:rgba(255,255,255,.72)}
+.cmp{margin-top:28px;background:var(--paper);border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.cmp-row{display:grid;grid-template-columns:72px minmax(0,1fr) minmax(0,1.2fr);border-bottom:1px solid var(--line)}
+.cmp-row:last-child{border-bottom:0}
+.cmp-row>div{padding:13px 10px;font-size:13.5px;font-weight:600;line-height:1.4;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cmp-row .k{font-weight:800;color:var(--sub);background:var(--cream)}
+.cmp-row .a{color:var(--sub)}
+.cmp-row .b{font-weight:800;color:var(--lake);background:var(--b-soft)}
+.cmp-row .b small{display:block;font-weight:600;color:var(--sub);font-size:12px}
+.cmp-row.hd>div{font-size:12.5px;font-weight:800;color:var(--sub);background:var(--mist)}
+.cmp-row.hd .b{background:var(--lake);color:#fff}
+.extra-cond{display:grid;gap:8px;margin-top:16px}
+.extra-cond div{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:700}
+.extra-cond svg{width:20px;height:20px;color:var(--lake-2);flex:0 0 auto;margin-top:1px}
+.extra-cond small{display:block;font-weight:600;color:var(--sub);font-size:13px}
+
+/* ===== 평면 ===== */
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 -20px;padding:0 20px 4px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:1.5px solid var(--line);background:var(--paper);border-radius:999px;padding:9px 18px;font-weight:800;font-size:14.5px;cursor:pointer}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.plan{margin-top:16px;background:var(--paper);border-radius:var(--r);border:1px solid var(--line);overflow:hidden;display:grid}
+.plan-img{background:#fff;padding:12px}
+.plan-img img{width:100%;aspect-ratio:1100/845;object-fit:contain}
+.plan-info{padding:20px;border-top:1px solid var(--line)}
+.plan-info h3{font-family:var(--head);font-weight:900;font-size:34px;letter-spacing:-.02em;line-height:1}
+.plan-info h3 small{font-size:14px;color:var(--red);margin-left:6px;letter-spacing:.1em}
+.plan-info dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:16px 0 18px;font-size:14.5px}
+.plan-info dt{color:var(--sub);font-weight:700}
+.plan-info dd{font-weight:800;text-align:right}
+.plan-info .btn{width:100%}
+
+/* ===== FAQ ===== */
+.faq{display:grid;gap:8px}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:17px 48px 17px 18px;font-weight:800;font-size:15.5px;position:relative;line-height:1.45}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:before{content:"Q";font-family:var(--head);font-weight:900;color:var(--red);margin-right:8px}
+.faq summary:after{content:"";position:absolute;right:20px;top:50%;width:9px;height:9px;border-right:2px solid var(--sub);border-bottom:2px solid var(--sub);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+.faq details[open] summary:after{transform:translateY(-30%) rotate(-135deg)}
+.faq .ans{padding:0 18px 18px 38px;font-size:14.5px;color:var(--sub);font-weight:600;line-height:1.65}
+.faq .ans b{color:var(--text)}
+
+/* ===== 마지막 신청 ===== */
+.final{background:linear-gradient(180deg,var(--lake) 0%,var(--ink) 100%);color:#fff;padding:72px 0}
+.final-grid{display:grid;gap:28px}
+.final .sec-title b{color:var(--gold)}
+.steps{list-style:none;display:grid;gap:10px;margin-top:24px}
+.steps li{display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px 16px}
+.steps i{font-style:normal;flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--ink);font-family:var(--head);font-weight:900;display:grid;place-items:center}
+.steps b{display:block;font-size:15px}
+.steps span{font-size:13px;color:rgba(255,255,255,.72);font-weight:600}
+.final-tel{display:flex;align-items:center;gap:14px;margin-top:20px;padding:18px;border-radius:14px;background:rgba(0,0,0,.2)}
+.final-tel small{display:block;font-size:12.5px;color:rgba(255,255,255,.65);font-weight:600}
+.final-tel b{font-family:var(--head);font-weight:900;font-size:28px;color:var(--gold-l);letter-spacing:-.01em;white-space:nowrap}
+.final-tel .btn{margin-left:auto;min-height:46px;padding:10px 18px;font-size:14.5px}
+
+/* ===== 푸터 ===== */
+footer{background:var(--foot);color:rgba(255,255,255,.6);font-size:12.5px;line-height:1.7;padding:36px 0 40px}
+footer .brand{color:#fff;margin-bottom:10px}
+footer a{text-decoration:underline}
+footer p+p{margin-top:6px}
+
+/* ===== 하단 고정 바 ===== */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 -6px 20px rgba(var(--ink-rgb),.12)}
+.bar .btn{min-height:48px;font-size:15.5px;padding:10px}
+
+/* ===== 라이트박스 ===== */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(8,20,18,.92);display:none;align-items:center;justify-content:center;padding:20px;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-height:90vh;width:auto;max-width:100%;border-radius:8px;background:#fff}
+.lb button{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.15);color:#fff;font-size:24px;cursor:pointer}
+
+/* ===== 등장 효과 ===== */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ===== 태블릿·PC ===== */
+@media (min-width:720px){
+  .facts ul{grid-template-columns:repeat(5,1fr)}
+  .facts li:nth-child(n+4){display:block}
+  .prem{grid-template-columns:1fr 1fr}
+  .transit{grid-template-columns:repeat(3,1fr)}
+  .life{grid-template-columns:repeat(3,1fr)}
+  .lc.wide{grid-column:auto}
+  .land{grid-template-columns:1fr 1fr}
+  .fac{grid-template-columns:repeat(4,1fr)}
+  .spec{grid-template-columns:repeat(3,1fr)}
+  .flow{grid-template-columns:repeat(3,1fr)}
+  .fl{flex-direction:column;text-align:center;padding:24px 16px}
+  .cmp-row{grid-template-columns:140px 1fr 1.2fr}
+  .cmp-row>div{padding:15px 18px;font-size:14.5px}
+  .extra-cond{grid-template-columns:repeat(3,1fr)}
+  .strip .wrap{flex-direction:row;align-items:center;justify-content:space-between}
+  .strip .btns{flex:0 0 auto;grid-template-columns:auto auto}
+}
+@media (min-width:1024px){
+  body{padding-bottom:0}
+  .bar{display:none}
+  .nav{display:flex}
+  .top-tel{margin-left:28px}
+  .hero{min-height:calc(100vh - 56px);display:flex;align-items:center}
+  .hero .wrap{grid-template-columns:440px 1fr 380px;align-items:center;gap:24px;padding-top:48px;padding-bottom:48px;width:100%;max-width:1440px;padding-left:48px;padding-right:48px}
+  .hero .wrap>.form-card{grid-column:3}
+  .top .wrap{max-width:1440px;padding-left:48px;padding-right:48px}
+  .hero-bg{height:auto;bottom:0}
+  .hero-bg img{object-position:60% 55%}
+  .hero-bg:after{background:linear-gradient(90deg,rgba(var(--ink-rgb),.88) 0%,rgba(var(--ink-rgb),.6) 30%,rgba(var(--ink-rgb),.08) 48%,rgba(var(--ink-rgb),.08) 62%,rgba(var(--ink-rgb),.45) 100%),linear-gradient(0deg,rgba(var(--ink-rgb),.5) 0%,transparent 30%)}
+  .hero-copy{min-height:0}
+  .hero h1{font-size:50px}
+  .hero-btns{display:flex;gap:10px}
+  .hero-btns .btn{padding:14px 26px}
+  .hero-btns .btn-cta{display:none}
+  .trio{max-width:440px}
+  .trio div{background:rgba(var(--ink-rgb),.55)}
+  .form-card{padding:30px 28px}
+  .sec{padding:104px 0}
+  .ov{grid-template-columns:1fr 1fr;align-items:start}
+  .loc-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:start}
+  .loc-grid .transit{grid-template-columns:1fr;margin-top:0}
+  .prem{grid-template-columns:repeat(3,1fr)}
+  .pc.feat{grid-row:span 2}
+  .prem .pc:last-child{grid-column:1/-1}
+  .pc.feat img{height:260px}
+  .duo{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}
+  .mall{grid-template-columns:1fr 1.1fr}
+  .mall img{height:100%;aspect-ratio:auto}
+  .mall .in{padding:36px 32px}
+  .plan{grid-template-columns:1.5fr 1fr}
+  .plan-info{border-top:0;border-left:1px solid var(--line);padding:32px 28px;display:flex;flex-direction:column;justify-content:center}
+  .final-grid{grid-template-columns:1fr 440px;gap:64px;align-items:center}
+  .tabs{margin:0;padding:0}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== 헤더 ===================== -->
+<header class="top">
+  <div class="wrap">
+    <a href="#top" class="brand"><i></i>브레인시티 앤네이처 미래도</a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#premium">프리미엄</a><a href="#overview">사업개요</a><a href="#location">입지</a><a href="#community">단지</a><a href="#condition">분양조건</a><a href="#types">평면</a><a href="#faq">FAQ</a>
+    </nav>
+    <a href="tel:16684270" class="top-tel" data-call><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>1668-4270</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===================== 1. 메인 카피 + 관심고객 등록 ===================== -->
+<section class="hero">
+  <div class="hero-bg"><img src="img/hero.jpg" alt="평택 브레인시티 조감도" fetchpriority="high"></div>
+  <div class="wrap">
+    <div>
+      <div class="hero-copy">
+      <span class="eyebrow-pill"><b>삼성 평택캠퍼스 직주근접</b> · 1,413세대</span>
+      <h1 class="h"><span class="sm">브레인시티 앤네이처 미래도</span>입주까지 <em>0원</em><br>입주축하금<br><em>500만원</em> 지급</h1>
+      <p class="lead"><span class="chg">조건 변경</span>입주 때까지 0원,<br>입주하면 축하금 500만원까지</p>
+      </div>
+      <div class="trio">
+        <div><b>0원</b><span>입주까지<br>부담</span></div>
+        <div><b>500만원</b><span>입주축하금<br>지급</span></div>
+        <div><b>1,413</b><span>세대<br>대단지</span></div>
+      </div>
+      <div class="hero-btns">
+        <a href="#apply-top" class="btn btn-cta" data-cta="hero">관심고객 등록</a>
+        <a href="tel:16684270" class="btn btn-ghost" data-call><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>전화상담</a>
+      </div>
+    </div>
+    <div class="form-card" id="apply-top" data-form="hero"></div>
+  </div>
+</section>
+
+<!-- 핵심 수치 -->
+<section class="facts" aria-label="단지 핵심 정보">
+  <ul>
+    <li><b>1,413세대</b><span>총 세대수</span></li>
+    <li><b>59·84㎡</b><span>전용 4개 타입</span></li>
+    <li><b>2028.07</b><span>입주 예정</span></li>
+    <li><b>최고 35층</b><span>지하2층~지상35층 · 9개동</span></li>
+    <li><b>전 세대</b><span>세대창고 무상 제공</span></li>
+  </ul>
+</section>
+
+<!-- ===================== 핵심 혜택 ===================== -->
+<section class="benefit" id="benefit">
+  <div class="wrap">
+    <div class="benefit-top rv">
+      <p class="eyebrow" style="justify-content:center">NEW CONDITION</p>
+      <h2 class="sec-title">조건이 바뀌었습니다<br><b>입주까지 0원 + 500만원</b></h2>
+    </div>
+    <div class="benefit-sum rv">
+      <div><small>조건 변경</small><b>0원</b><span>입주 때까지<br>0원</span></div>
+      <div><small>입주 시</small><b>500만원</b><span>입주축하금<br>지급</span></div>
+      <div><small>전 세대</small><b>무상</b><span>지하 세대<br>전용창고</span></div>
+    </div>
+    <p class="note">※ ‘입주까지 0원’의 적용 범위와 입주축하금의 지급 대상·시기·방법은 계약 조건에 따라 다를 수 있으므로, 계약 전 분양 상담과 계약서를 통해 반드시 확인하시기 바랍니다.</p>
+  </div>
+</section>
+
+<!-- ===================== 2. 핵심 프리미엄 ===================== -->
+<section class="sec" id="premium">
+  <div class="wrap">
+    <p class="eyebrow rv">01 · PREMIUM</p>
+    <h2 class="sec-title rv">왜 지금,<br>브레인시티 앤네이처 미래도인가</h2>
+    <p class="sec-sub rv">직장 · 조건 · 대단지, 세 가지를 한 번에</p>
+    <div class="prem">
+      <article class="pc feat rv">
+        <img src="img/aerial.jpg" alt="삼성전자 평택캠퍼스와 브레인시티 일대 항공 이미지" loading="lazy">
+        <div class="in"><span class="no">01</span><h3>삼성전자 평택캠퍼스 약 3.5km</h3><p>브레인시티 남측 초입. 평택캠퍼스 5공장(P5)은 2028년 가동 목표로 건설이 추진 중입니다(언론 보도 기준).</p></div>
+      </article>
+      <article class="pc rv"><span class="no">02</span><h3>입주까지 0원</h3><p>입주 때까지 0원, 바뀐 조건 그대로 상담받으세요</p></article>
+      <article class="pc rv"><span class="no">03</span><h3>입주축하금 500만원</h3><p>입주하는 날, 축하금 500만원 지급</p></article>
+      <article class="pc rv"><span class="no">04</span><h3>1,413세대 대단지</h3><p>9개동 · 지상 최고 35층 · 건폐율 12%대 센트럴파크 조경</p></article>
+      <article class="pc rv"><span class="no">05</span><h3>아주대병원 · 카이스트 예정지 인접</h3><p>아주대병원 예정지 약 0.65km, 카이스트 평택캠퍼스 예정지 약 1.2km</p></article>
+      <article class="pc rv"><span class="no">06</span><h3>전 가구 남향 배치 · 세대창고</h3><p>판상형 맞통풍 구조, 브레인시티 최초 전 세대 지하 세대창고 무상 제공</p></article>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <p>입주까지 0원 조건,<br>우리 집에 맞는지 확인하세요<small>사전 등록 고객 우선 상담 안내</small></p>
+    <div class="btns"><a href="#apply" class="btn btn-cta" data-cta="strip1">관심고객 등록</a><a href="tel:16684270" class="btn btn-ghost" data-call>전화상담</a></div>
+  </div>
+</div>
+
+<!-- ===================== 3. 사업개요 ===================== -->
+<section class="sec alt" id="overview">
+  <div class="wrap">
+    <p class="eyebrow rv">02 · OVERVIEW</p>
+    <h2 class="sec-title rv">한눈에 보는 사업개요</h2>
+    <p class="sec-sub rv">평택 브레인시티 공동주택 10블록</p>
+    <div class="ov">
+      <div class="rv">
+        <div class="ov-img zoom"><img src="img/iso.jpg" alt="브레인시티 앤네이처 미래도 단지 조경 투시도" loading="lazy"></div>
+        <p class="cap">※ 상기 CG는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.</p>
+      </div>
+      <div class="rv">
+        <table class="tbl">
+          <tr><th>단지명</th><td>브레인시티 앤네이처 미래도</td></tr>
+          <tr><th>위치</th><td>경기도 평택시 브레인시티 공동주택 10블록</td></tr>
+          <tr><th>규모</th><td>지하 2층 ~ 지상 최고 35층, 9개동<small>총 1,413세대 · 전용 59·84㎡ (4개 타입)</small></td></tr>
+          <tr><th>입주</th><td>2028년 7월 예정</td></tr>
+          <tr><th>특화</th><td>전 세대 지하 세대창고 무상 제공<small>건폐율 12%대 · 전 가구 남향 배치</small></td></tr>
+        </table>
+        <div class="mix">
+          <div><b>59㎡</b><span>366세대</span></div>
+          <div><b>84A</b><span>683세대</span></div>
+          <div><b>84B</b><span>298세대</span></div>
+          <div><b>84C</b><span>66세대</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="siteplan zoom rv"><img src="img/siteplan.jpg" alt="단지 배치도 — 9개동 1,413세대, 타입별 배치" loading="lazy"></div>
+    <p class="cap">※ 배치도는 이해를 돕기 위한 것으로 실제와 다를 수 있습니다. 이미지를 누르면 크게 볼 수 있어요.</p>
+  </div>
+</section>
+
+<!-- ===================== 4. 입지 · 교통 ===================== -->
+<section class="sec" id="location">
+  <div class="wrap">
+    <p class="eyebrow rv">03 · LOCATION</p>
+    <h2 class="sec-title rv">출근은 가깝게,<br>고속도로는 바로 앞</h2>
+    <p class="sec-sub rv">삼성 평택캠퍼스 · 지제역 · 송탄IC 생활권</p>
+    <div class="loc-grid">
+      <div class="rv">
+        <div class="loc-map zoom"><img src="img/location-map.jpg" alt="브레인시티 앤네이처 미래도 반경 거리 입지 안내도" loading="lazy"></div>
+      </div>
+      <div class="transit">
+        <div class="tr rv">
+          <div class="tr-h"><span class="ln">직장 · 의료</span>단지 기준 거리</div>
+          <ul><li><b>3.5km</b><span>삼성 캠퍼스</span></li><li><b>0.65km</b><span>아주대병원<small style="display:block;font-size:11px">(예정)</small></span></li><li><b>1.2km</b><span>카이스트<small style="display:block;font-size:11px">(예정)</small></span></li></ul>
+        </div>
+        <div class="tr rv">
+          <div class="tr-h"><span class="ln c2">철도</span>SRT · 1호선<span style="margin-left:auto;font-size:11.5px;color:var(--cta);font-weight:800">GTX-A·C 예정</span></div>
+          <ul><li><b>3.9km</b><span>지제역</span></li><li><b>4.1km</b><span>서정리역</span></li><li><b>1.4km</b><span>하나로마트</span></li></ul>
+        </div>
+        <div class="tr rv">
+          <div class="tr-h"><span class="ln c3">도로</span>고속도로 진입</div>
+          <ul><li><b>1.6km</b><span>송탄IC</span></li><li><b>3.8km</b><span>안성IC</span></li><li><b>4.4km</b><span>원곡IC</span></li></ul>
+        </div>
+      </div>
+    </div>
+    <p class="note">※ 거리는 지도상 대략적인 거리로 실제 이동 거리·시간과 다를 수 있습니다. GTX-A·C 지제역 정차, 아주대병원·카이스트 평택캠퍼스 등은 추진 중이거나 예정인 계획으로 관계기관 사정에 따라 변경·지연될 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- ===================== 5. 생활환경 ===================== -->
+<section class="sec dark" id="life">
+  <div class="wrap">
+    <p class="eyebrow rv">04 · LIFE</p>
+    <h2 class="sec-title rv">일자리 · 병원 · 자연<br>모두 가까운 브레인시티</h2>
+    <p class="sec-sub rv">산업단지와 대학병원, 카이스트가 함께 들어서는 계획도시</p>
+    <div class="duo rv">
+      <figure><img src="img/ajou.jpg" alt="아주대학교병원 평택병원 조감도" loading="lazy"><figcaption>아주대학교 평택병원<small>약 800병상 규모 추진 · 예정</small></figcaption></figure>
+      <figure><img src="img/kaist.jpg" alt="카이스트 평택캠퍼스 조감도" loading="lazy"><figcaption>카이스트 평택캠퍼스<small>브레인시티 내 조성 예정</small></figcaption></figure>
+    </div>
+    <div class="life">
+      <div class="lc rv"><em>JOB</em><h3>직주근접</h3><ul><li>삼성전자 평택캠퍼스</li><li>브레인시티 산업단지 기업 입주 예정</li><li>송탄·칠괴 일반산업단지</li></ul></div>
+      <div class="lc rv"><em>LIFE</em><h3>쇼핑 · 생활</h3><ul><li>농협 하나로마트(약 1.4km)</li><li>코스트코 평택점</li><li>이마트 평택점 · 홈플러스 송탄점</li></ul></div>
+      <div class="lc rv"><em>EDU</em><h3>교육</h3><ul><li>유치원 · 초 · 중 · 고 예정부지 인접</li><li>한경국립대 평택캠퍼스</li></ul></div>
+      <div class="lc rv"><em>NATURE</em><h3>자연</h3><ul><li>단지 앞 근린공원</li><li>도일천 수변 산책로</li><li>부락산 · 덕암산 등산로</li></ul></div>
+      <div class="lc rv"><em>TRAFFIC</em><h3>교통</h3><ul><li>송탄IC · 평택제천고속도로</li><li>지제역 SRT · 1호선</li></ul></div>
+      <div class="lc rv"><em>FUTURE</em><h3>미래 가치</h3><ul><li>평택 2040 도시기본계획 계획인구 105.4만</li><li>청정수소 특화단지 조성 계획</li></ul></div>
+    </div>
+    <p class="note">※ 개발 계획은 추진 중이거나 예정인 사항으로 관계기관 사정에 따라 변경·지연될 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- ===================== 6. 단지 · 커뮤니티 ===================== -->
+<section class="sec" id="community">
+  <div class="wrap">
+    <p class="eyebrow rv">05 · COMMUNITY</p>
+    <h2 class="sec-title rv">숲처럼 넓은 마당,<br>집 안처럼 편한 단지</h2>
+    <p class="sec-sub rv">건폐율 12%대, 동 사이가 공원이 되는 단지</p>
+    <div class="land">
+      <figure class="lf rv zoom"><img src="img/park.jpg" alt="단지 중앙 패밀리파크와 워터가든 배치" loading="lazy"><figcaption><b>패밀리파크 · 워터가든</b><span>대형 센트럴파크와 바람길이 이어지는 단지 중앙</span></figcaption></figure>
+      <figure class="lf rv"><img src="img/living.jpg" alt="견본주택 유니트 거실" loading="lazy"><figcaption><b>광폭 거실 4.9m</b><span>84㎡ 기준 · 견본주택 유니트</span></figcaption></figure>
+    </div>
+    <div class="fac">
+      <div class="fc rv"><i>SPORTS</i><h3>멀티코트</h3><p>다목적 실내체육관</p></div>
+      <div class="fc rv"><i>GOLF</i><h3>스크린골프</h3><p>단지 안에서 즐기는 라운딩</p></div>
+      <div class="fc rv"><i>FITNESS</i><h3>피트니스 · 사우나</h3><p>운동부터 휴식까지</p></div>
+      <div class="fc rv"><i>CAFE</i><h3>카페테리아</h3><p>이웃과 함께하는 쉼터</p></div>
+    </div>
+    <div class="extra rv"><span>패밀리파크</span><span>워터가든</span><span>포레스트가든</span><span>리빙가든</span><span>숲놀이터</span><span>에코숲</span><span>어린이집</span><span>시니어클럽</span><span>주민운동시설</span></div>
+    <p class="note">※ 커뮤니티·조경 시설의 종류와 구성은 설계 기준이며 실제 시공 시 변경될 수 있습니다.</p>
+
+    <div class="mall rv">
+      <img src="img/storage.jpg" alt="세대전용창고 견본 (1.0m × 1.2m)" loading="lazy">
+      <div class="in">
+        <em>BRAIN CITY FIRST</em>
+        <h3>브레인시티 최초<br>전 세대 세대창고</h3>
+        <ul>
+          <li><b>전 세대 무상 제공</b>지하주차장 별도 공간에 세대전용창고</li>
+          <li><b>캠핑 · 자전거 · 계절용품</b>집 안 수납 걱정을 덜어주는 공간</li>
+          <li><b>동별 지하 1층 위치</b>세부 위치는 동·호수에 따라 상담 시 안내</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">※ 세대창고 사진은 견본 연출로, 규격·위치는 실제 시공 시 변경될 수 있습니다.</p>
+
+    <h3 class="sub-h rv">살아보면 다른 특화 설계</h3>
+    <div class="spec">
+      <div class="sp rv"><i>01</i><h4>커튼월룩 · 석재 외관</h4><p>옥탑 구조물 특화, 5층 높이 석재마감</p></div>
+      <div class="sp rv"><i>02</i><h4>광폭 거실 4.9m</h4><p>84㎡ 기준, 탁 트인 개방감</p></div>
+      <div class="sp rv"><i>03</i><h4>판상형 맞통풍</h4><p>전 가구 남향 배치</p></div>
+      <div class="sp rv"><i>04</i><h4>프리미엄 주방</h4><p>이탈리아 론첼 아르코 도어 · 유럽산 블룸 하드웨어</p></div>
+      <div class="sp rv"><i>05</i><h4>드레스룸 · 팬트리</h4><p>넉넉한 수납 설계</p></div>
+      <div class="sp rv"><i>06</i><h4>분당 150m 엘리베이터</h4><p>고층 대단지에 맞춘 속도</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 7. 분양조건 ===================== -->
+<section class="sec alt" id="condition">
+  <div class="wrap">
+    <p class="eyebrow rv">06 · CONDITION</p>
+    <h2 class="sec-title rv">입주까지 0원,<br>입주하면 500만원</h2>
+    <p class="sec-sub rv">새로 바뀐 분양 조건</p>
+    <div class="flow">
+      <div class="fl hi rv"><div class="st">입주<br>까지</div><div><b>0원</b><span>입주까지 0원 조건</span></div></div>
+      <div class="fl hi rv"><div class="st">입주 시</div><div><b>500만원</b><span>입주축하금 지급</span></div></div>
+      <div class="fl rv"><div class="st">입주</div><div><b>2028.07</b><span>입주 예정</span></div></div>
+    </div>
+
+    <div class="cmp rv" role="table" aria-label="일반 분양 조건과 비교">
+      <div class="cmp-row hd" role="row"><div class="k">구분</div><div class="a">일반적인 분양 조건</div><div class="b">앤네이처 미래도</div></div>
+      <div class="cmp-row" role="row"><div class="k">입주 전 부담</div><div class="a">계약금 · 중도금<br>순차 납부</div><div class="b">입주까지 0원</div></div>
+      <div class="cmp-row" role="row"><div class="k">입주 혜택</div><div class="a">별도 없음</div><div class="b">입주축하금<br>500만원 지급</div></div>
+      <div class="cmp-row" role="row"><div class="k">세대창고</div><div class="a">미제공 또는 유상</div><div class="b">전 세대 무상<small>브레인시티 최초</small></div></div>
+    </div>
+
+    <div class="extra-cond">
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><p>선착순 동 · 호수 지정<small>잔여 동·호수는 상담 시 확인</small></p></div>
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><p>2028년 7월 입주 예정<small>9개동 1,413세대</small></p></div>
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><p>세부 조건 1:1 상담<small>타입·동호수별 조건은 상담 시 확인</small></p></div>
+    </div>
+    <p class="note">※ ‘일반적인 분양 조건’은 비교를 위한 통상적인 예시입니다. ‘입주까지 0원’의 적용 범위, 입주축하금 지급 대상·시기 등 세부 조건은 계약 전 분양 상담과 계약서를 통해 반드시 확인하시기 바랍니다.</p>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <p>입주까지 0원 · 축하금 500만원,<br>지금 조건 그대로 상담받으세요<small>남겨주시면 담당자가 확인 후 연락드려요</small></p>
+    <div class="btns"><a href="#apply" class="btn btn-cta" data-cta="strip2">관심고객 등록</a><a href="tel:16684270" class="btn btn-ghost" data-call>전화상담</a></div>
+  </div>
+</div>
+
+<!-- ===================== 8. 평면 · 세대정보 ===================== -->
+<section class="sec" id="types">
+  <div class="wrap">
+    <p class="eyebrow rv">07 · UNIT PLAN</p>
+    <h2 class="sec-title rv">전용 59㎡ · 84㎡<br>4개 타입</h2>
+    <p class="sec-sub rv">타입을 눌러 평면과 세대 정보를 확인하세요</p>
+    <div class="tabs" id="tabs" role="tablist" aria-label="평면 타입"></div>
+    <div class="plan">
+      <div class="plan-img zoom" id="tp-img"></div>
+      <div class="plan-info">
+        <h3 id="tp-name"></h3>
+        <dl>
+          <dt>전용면적</dt><dd id="tp-area"></dd>
+          <dt>공급세대</dt><dd id="tp-unit"></dd>
+          <dt>향</dt><dd id="tp-dir"></dd>
+          <dt>특징</dt><dd id="tp-pt"></dd>
+        </dl>
+        <a href="#apply" class="btn btn-cta" id="tp-cta" data-cta="plan">이 타입 상담받기</a>
+      </div>
+    </div>
+    <p class="note">※ 평면도를 누르면 크게 볼 수 있어요. 치수는 참고용이며, 평면도는 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- ===================== 9. FAQ ===================== -->
+<section class="sec alt" id="faq">
+  <div class="wrap" style="max-width:820px">
+    <p class="eyebrow rv">08 · FAQ</p>
+    <h2 class="sec-title rv">자주 묻는 질문</h2>
+    <p class="sec-sub rv">상담 전에 가장 많이 물어보시는 내용이에요</p>
+    <div class="faq">
+      <details class="rv"><summary>바뀐 조건이 무엇인가요?</summary><div class="ans"><b>입주까지 0원</b>, 그리고 입주 시 <b>입주축하금 500만원 지급</b>으로 조건이 변경되었습니다. 적용 범위와 지급 시기는 상담 시 자세히 안내해 드립니다.</div></details>
+      <details class="rv"><summary>단지 규모는 어떻게 되나요?</summary><div class="ans">지하 2층~지상 최고 35층, <b>9개동 총 1,413세대</b>입니다. 전용 59㎡ 366세대, 84A 683세대, 84B 298세대, 84C 66세대로 구성됩니다.</div></details>
+      <details class="rv"><summary>입주는 언제인가요?</summary><div class="ans"><b>2028년 7월 입주 예정</b>입니다.</div></details>
+      <details class="rv"><summary>삼성전자 평택캠퍼스와 얼마나 가까운가요?</summary><div class="ans">지도상 약 <b>3.5km</b> 거리로, 브레인시티 남측 초입에 위치해 평택캠퍼스와 산업단지 출퇴근이 편리합니다. 실제 이동 시간은 경로에 따라 다릅니다.</div></details>
+      <details class="rv"><summary>세대창고는 모든 세대에 주나요?</summary><div class="ans">네, 지하주차장 별도 공간에 <b>전 세대 세대전용창고를 무상 제공</b>합니다. 동·호수별 창고 위치는 상담 시 안내해 드립니다.</div></details>
+      <details class="rv"><summary>원하는 동·호수를 고를 수 있나요?</summary><div class="ans"><b>선착순 동·호수 지정</b>으로 진행됩니다. 잔여 세대는 수시로 바뀌므로 상담으로 확인해 주세요.</div></details>
+      <details class="rv"><summary>견본주택은 예약하고 가야 하나요?</summary><div class="ans">예약 없이도 방문하실 수 있지만, <b>사전 등록 고객은 우선 상담</b>으로 안내해 드립니다. 견본주택은 평택시 죽백동 일원에 있으며, 정확한 위치는 예약 시 안내해 드립니다.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 10. 마지막 관심고객 등록 ===================== -->
+<section class="final" id="apply">
+  <div class="wrap final-grid">
+    <div>
+      <p class="eyebrow rv">VISIT RESERVATION</p>
+      <h2 class="sec-title rv">관심고객 등록하고<br><b>우선 상담</b> 받으세요</h2>
+      <ol class="steps">
+        <li class="rv"><i>1</i><div><b>관심고객 등록</b><span>이름 · 휴대폰 · 방문 희망 시간을 남겨주세요</span></div></li>
+        <li class="rv"><i>2</i><div><b>담당자 확인 연락</b><span>담당자가 일정 확인 후 연락드립니다</span></div></li>
+        <li class="rv"><i>3</i><div><b>견본주택 방문</b><span>유니트 관람과 1:1 맞춤 상담</span></div></li>
+      </ol>
+      <div class="final-tel rv">
+        <div><small>분양문의 대표번호</small><b>1668-4270</b></div>
+        <a href="tel:16684270" class="btn btn-cta" data-call>전화걸기</a>
+      </div>
+    </div>
+    <div class="form-card rv" data-form="final"></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="brand">브레인시티 앤네이처 미래도</p>
+    <p>분양문의 : <a href="tel:16684270">1668-4270</a></p>
+    <p>견본주택 : 경기도 평택시 죽백동 일원 &nbsp;|&nbsp; 사업지 : 경기도 평택시 브레인시티 공동주택 10블록</p>
+    <p><a href="privacy.html">개인정보처리방침</a></p>
+    <p style="margin-top:14px">※ 본 홈페이지의 CG·이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 있을 수 있습니다. 거리는 지도상 대략적인 거리이며, 교통·개발 계획 등은 관계기관 사정에 따라 변경될 수 있습니다. 세부 사항은 입주자모집공고 및 계약서를 기준으로 합니다.</p>
+  </div>
+</footer>
+
+<!-- 하단 고정 바 (모바일) -->
+<div class="bar">
+  <a href="tel:16684270" class="btn btn-dark" data-call>전화상담</a>
+  <a href="#apply" class="btn btn-cta" data-cta="bar">관심고객 등록</a>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-label="이미지 크게 보기"><button type="button" aria-label="닫기">×</button><img alt=""></div>
+
+<!-- 폼 템플릿 (히어로·하단 두 곳에 같은 폼이 들어갑니다) -->
+<template id="formTpl">
+  <form novalidate>
+    <div class="fbody">
+      <div class="ft"><h3>관심고객 등록</h3><span class="tag-live">방문예약 접수중</span></div>
+      <p class="fs">남겨주시면 담당자가 확인 후 연락드려요</p>
+      <label class="field"><span>이름 <em>*</em></span><input type="text" name="name" placeholder="홍길동" autocomplete="name" maxlength="20"></label>
+      <label class="field"><span>휴대폰 <em>*</em></span><input type="tel" name="phone" placeholder="010-0000-0000" inputmode="numeric" autocomplete="tel"></label>
+      <fieldset class="field">
+        <legend>견본주택 방문시간 <i>(선택)</i></legend>
+        <div class="row2">
+          <input type="date" name="date" aria-label="방문 희망 날짜">
+          <select name="time" aria-label="방문 희망 시간"><option value="">시간 선택</option></select>
+        </div>
+      </fieldset>
+      <input type="hidden" name="type" value="">
+      <input type="text" name="hp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="agree">
+        <input type="checkbox" name="agree" id="">
+        <label>[필수] 개인정보 수집·이용 동의</label>
+        <button type="button" class="agree-tg" aria-expanded="false">보기</button>
+      </div>
+      <dl class="agree-detail">
+        <dt>수집 목적</dt><dd>분양 상담 및 견본주택 방문 예약 안내</dd>
+        <dt>수집 항목</dt><dd>이름, 휴대폰 번호, 방문 희망 일시(선택), 관심 타입(선택)</dd>
+        <dt>자동 수집</dt><dd>접수 시각, 유입 경로(광고 매체·캠페인 등)</dd>
+        <dt>보유 기간</dt><dd>상담 종료 후 1년 (동의 철회 시 즉시 파기)</dd>
+        <dt>동의 거부</dt><dd>동의하지 않으실 수 있으며, 이 경우 온라인 등록 대신 대표번호(1668-4270)로 문의해 주세요. <a href="privacy.html" target="_blank" rel="noopener">개인정보처리방침 전문 보기</a></dd>
+      </dl>
+      <p class="err" role="alert"></p>
+      <button type="submit" class="btn btn-cta">관심고객 등록하기</button>
+      <p class="tel-line">급하시면 <a href="tel:16684270" data-call>1668-4270</a> 바로 전화상담</p>
+    </div>
+    <div class="done" aria-live="polite">
+      <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <h3>관심고객 등록이 접수되었어요</h3>
+      <p>담당자가 확인 후 빠르게 연락드리겠습니다.</p>
+      <a href="tel:16684270" class="btn btn-dark" data-call>지금 바로 전화상담</a>
+    </div>
+  </form>
+</template>
+
+<script>
+// ===== 구글 시트 접수 주소 (Apps Script 웹 앱 URL) =====
+// ※ 현재는 기존 현장 시트 주소. 미래도 전용 시트를 만들면 이 줄만 새 주소로 바꾸세요. (접수 행의 page 칸에 /miraedo/ 주소가 함께 기록됩니다)
+const SHEET_URL='https://script.google.com/macros/s/AKfycbx4j3VSys0aEfxt21pMesvmhVKvvQCxF21hFeD0en960bWNgEY48FmvZZOIXQW5F5mjpA/exec';
+const TEL='1668-4270';
+
+// ===== 평면 타입 데이터 (분양 교육자료 기준) =====
+const TYPES=[
+  {id:'59',area:'59㎡',unit:366,dir:'남동향',pt:'3룸 · 드레스룸 · 팬트리'},
+  {id:'84A',area:'84㎡',unit:683,dir:'남동향',pt:'거실 4.9m · 주방 4.9m'},
+  {id:'84B',area:'84㎡',unit:298,dir:'남서향',pt:'거실 4.9m · 주방 4.9m'},
+  {id:'84C',area:'84㎡',unit:66,dir:'남서향',pt:'거실 4.9m · 주방/식당 6.1m'}
+];
+const $=s=>document.querySelector(s);
+let chosenType='';
+
+// ===== 폼 2개 생성 =====
+const tpl=$('#formTpl');
+const today=(()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')})();
+document.querySelectorAll('[data-form]').forEach((box,i)=>{
+  box.appendChild(tpl.content.cloneNode(true));
+  const f=box.querySelector('form');f.dataset.pos=box.dataset.form;
+  const cb=f.querySelector('input[name=agree]'),lbl=f.querySelector('.agree label');
+  cb.id='agree-'+i;lbl.htmlFor=cb.id;
+  f.querySelector('input[name=date]').min=today;
+  const sel=f.querySelector('select[name=time]');
+  sel.add(new Option('상관없음','상관없음'));
+  for(let m=600;m<=1080;m+=30){const v=String(Math.floor(m/60)).padStart(2,'0')+':'+(m%60?'30':'00');sel.add(new Option(v,v))}
+  const ph=f.querySelector('input[name=phone]');
+  ph.addEventListener('input',()=>{const n=ph.value.replace(/\D/g,'').slice(0,11);ph.value=n.length<4?n:n.length<8?n.slice(0,3)+'-'+n.slice(3):n.slice(0,3)+'-'+n.slice(3,7)+'-'+n.slice(7)});
+  const tg=f.querySelector('.agree-tg'),dt=f.querySelector('.agree-detail');
+  tg.addEventListener('click',()=>{const o=dt.classList.toggle('open');tg.setAttribute('aria-expanded',o);tg.textContent=o?'닫기':'보기'});
+  f.addEventListener('submit',onSubmit);
+});
+
+// ===== 광고 유입 정보 (UTM) 저장 =====
+const UTM_KEYS=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'];
+(function(){try{const q=new URLSearchParams(location.search);const o={};UTM_KEYS.forEach(k=>{if(q.get(k))o[k]=q.get(k)});
+  if(Object.keys(o).length)sessionStorage.setItem('md_utm',JSON.stringify(o));
+  if(!sessionStorage.getItem('md_ref'))sessionStorage.setItem('md_ref',document.referrer||'직접 방문');}catch(_){}})();
+function utmInfo(){try{return {utm:JSON.parse(sessionStorage.getItem('md_utm')||'{}'),ref:sessionStorage.getItem('md_ref')||''}}catch(_){return {utm:{},ref:''}}}
+
+// ===== 제출 → 구글 시트 =====
+let sending=false;
+async function onSubmit(e){
+  e.preventDefault();
+  if(sending)return;
+  const f=e.currentTarget,err=f.querySelector('.err'),el=f.elements;
+  const name=el['name'].value.trim(),phone=el['phone'].value,digits=phone.replace(/\D/g,'');
+  let msg='';
+  if(!name)msg='이름을 입력해 주세요.';
+  else if(!/^01[016789]\d{7,8}$/.test(digits))msg='휴대폰 번호를 정확히 입력해 주세요.';
+  else if(!el['agree'].checked)msg='개인정보 수집·이용에 동의해 주세요.';
+  if(msg){err.textContent=msg;err.style.display='block';return}
+  err.style.display='none';
+  if(el['hp'].value)return;
+
+  const {utm,ref}=utmInfo();
+  const data=new URLSearchParams({
+    name,phone,
+    type:chosenType||el['type'].value||'',
+    date:el['date'].value||'',
+    time:el['time'].value||'',
+    agree:'동의',
+    source:utm.utm_source||'',medium:utm.utm_medium||'',campaign:utm.utm_campaign||'',
+    content:utm.utm_content||'',term:utm.utm_term||'',
+    clickid:utm.fbclid?('fb:'+utm.fbclid):(utm.gclid?('g:'+utm.gclid):''),
+    referrer:ref,page:location.href.split('?')[0]+'#form-'+f.dataset.pos,ua:navigator.userAgent
+  });
+  const btn=f.querySelector('button[type=submit]');
+  if(SHEET_URL){
+    sending=true;btn.disabled=true;btn.textContent='접수 중...';
+    try{await fetch(SHEET_URL,{method:'POST',mode:'no-cors',body:data});}
+    catch(_){
+      sending=false;btn.disabled=false;btn.textContent='관심고객 등록하기';
+      err.textContent='접수 중 문제가 생겼어요. 잠시 후 다시 시도하시거나 '+TEL+'로 전화 주세요.';err.style.display='block';return;
+    }
+  }
+  document.querySelectorAll('[data-form] form').forEach(x=>{x.querySelector('.fbody').style.display='none';x.querySelector('.done').style.display='block'});
+  sending=false;
+  try{if(window.fbq)fbq('track','Lead');if(window.gtag)gtag('event','generate_lead');}catch(_){}
+}
+
+document.querySelectorAll('[data-call]').forEach(a=>a.addEventListener('click',()=>{try{if(window.fbq)fbq('track','Contact');if(window.gtag)gtag('event','click_call');}catch(_){}}));
+
+// ===== 평면 탭 =====
+const tabs=$('#tabs');
+function showType(t){
+  tabs.querySelectorAll('.tab').forEach(b=>{const on=b.dataset.id===t.id;b.classList.toggle('on',on);b.setAttribute('aria-selected',on)});
+  $('#tp-name').innerHTML=t.id+'<small>TYPE</small>';
+  $('#tp-area').textContent=t.area;
+  $('#tp-unit').textContent=t.unit+'세대';
+  $('#tp-dir').textContent=t.dir;
+  $('#tp-pt').textContent=t.pt;
+  $('#tp-img').innerHTML='<img src="img/plan_'+t.id+'.jpg" alt="'+t.id+' 평면도">';
+  $('#tp-cta').dataset.type=t.id;
+}
+TYPES.forEach(t=>{const b=document.createElement('button');b.type='button';b.className='tab';b.setAttribute('role','tab');b.dataset.id=t.id;b.textContent=t.id==='59'?'59㎡':t.id;b.addEventListener('click',()=>showType(t));tabs.appendChild(b)});
+showType(TYPES[0]);
+$('#tp-cta').addEventListener('click',e=>{chosenType=e.currentTarget.dataset.type});
+TYPES.forEach(t=>{const i=new Image();i.src='img/plan_'+t.id+'.jpg'});
+
+// ===== 이미지 크게 보기 =====
+const lb=$('#lb'),lbImg=lb.querySelector('img');
+document.addEventListener('click',e=>{
+  const z=e.target.closest('.zoom');
+  if(z){const im=z.querySelector('img');if(!im)return;lbImg.src=im.src;lbImg.alt=im.alt;lb.classList.add('open');return}
+  if(e.target.closest('#lb'))lb.classList.remove('open');
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+
+// ===== 스크롤 등장 효과 =====
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+}else document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
+</script>
+</body>
+</html>
