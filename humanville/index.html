@@ -85,11 +85,17 @@ button,input,select{font:inherit;color:inherit}
 .hero .wrap{position:relative;z-index:3;display:grid;gap:28px;padding-top:30px;padding-bottom:30px}
 .eyebrow-pill{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);color:#fff}
 .eyebrow-pill b{color:var(--gold-l)}
-.hero h1{font-size:clamp(34px,9.4vw,54px);margin:16px 0 14px;text-shadow:0 2px 18px rgba(8,20,40,.55)}
+.hero h1{position:relative;z-index:0;font-size:clamp(32px,8.6vw,48px);margin:16px 0 14px;text-shadow:0 2px 18px rgba(8,20,40,.55)}
 .hero-copy{min-height:470px}
 .hero .lead{text-shadow:0 1px 10px rgba(8,20,40,.6);font-size:clamp(15px,3.9vw,19px);font-weight:600;color:rgba(255,255,255,.88);line-height:1.55}
 .hero h1 .sm{display:block;font-size:.5em;font-weight:800;letter-spacing:-.01em;color:var(--gold-l);margin-bottom:8px}
 .hero h1 em{font-style:normal;color:var(--gold)}
+.hero h1 .big{display:inline-block;position:relative;margin:6px 0 4px;font-size:clamp(68px,20vw,104px);line-height:1;letter-spacing:-.04em;color:var(--gold);white-space:nowrap;text-shadow:0 4px 0 rgba(8,20,40,.45),0 10px 30px rgba(8,20,40,.6);animation:pop .7s cubic-bezier(.2,1.6,.4,1) .15s both}
+.hero h1 .big small{font-size:.5em;letter-spacing:-.02em;margin-left:2px}
+.hero h1 .big:after{content:"";position:absolute;left:-4px;right:-6px;bottom:.06em;height:.2em;background:var(--red);border-radius:4px;z-index:-1;transform-origin:left;animation:mark .5s ease-out .6s both}
+.hero h1 .tag{display:inline-block;font-size:.62em;letter-spacing:-.01em;background:var(--red);color:#fff;padding:5px 12px 4px;border-radius:8px;vertical-align:middle;text-shadow:none}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes mark{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 .trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:20px 0 22px}
 .trio div{background:#fff;border-radius:14px;padding:12px 6px;text-align:center;box-shadow:0 10px 24px -14px rgba(0,0,0,.6)}
 .trio b{display:block;font-family:var(--head);font-weight:900;font-size:clamp(15px,4.3vw,24px);white-space:nowrap;color:var(--red);line-height:1.2}
@@ -335,10 +341,33 @@ footer p+p{margin-top:6px}
 .lb img{max-height:90vh;width:auto;max-width:100%;border-radius:8px;background:#fff}
 .lb button{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.15);color:#fff;font-size:24px;cursor:pointer}
 
+/* ===== 상품권 팝업 ===== */
+.pop{position:fixed;inset:0;z-index:95;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(8,20,40,.72)}
+.pop.open{display:flex;animation:fade .25s ease-out}
+.pop-box{position:relative;width:100%;max-width:360px;border-radius:24px;overflow:hidden;background:var(--ink);color:#fff;text-align:center;box-shadow:0 30px 70px -20px rgba(0,0,0,.7);animation:rise .4s cubic-bezier(.2,1.3,.4,1)}
+.pop-top{padding:30px 22px 22px;background:radial-gradient(circle at 50% 0%,#1D4479 0%,var(--ink) 70%)}
+.pop-badge{display:inline-block;background:var(--red);color:#fff;font-weight:800;font-size:14px;padding:6px 14px;border-radius:999px;letter-spacing:.02em}
+.pop-amt{font-family:var(--head);font-weight:900;color:var(--gold);font-size:76px;line-height:1;letter-spacing:-.04em;margin:16px 0 4px;white-space:nowrap;text-shadow:0 4px 0 rgba(0,0,0,.35)}
+.pop-amt small{font-size:.42em;letter-spacing:-.02em;margin-left:2px}
+.pop-tt{font-family:var(--head);font-weight:900;font-size:28px;letter-spacing:-.03em;line-height:1.25}
+.pop-sub{font-size:14px;color:rgba(255,255,255,.75);font-weight:600;margin-top:10px;line-height:1.5}
+.pop-card{position:relative;margin:18px auto 0;width:210px;height:86px;border-radius:12px;background:linear-gradient(135deg,var(--gold),#FFE77A);color:var(--ink);display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--head);font-weight:900;font-size:20px;transform:rotate(-4deg);box-shadow:0 14px 28px -12px rgba(0,0,0,.6)}
+.pop-card:before{content:"GIFT CARD";position:absolute;left:12px;top:9px;font-size:9.5px;letter-spacing:.18em;opacity:.65}
+.pop-card i{font-style:normal;color:var(--red)}
+.pop-btm{background:#fff;color:var(--text);padding:18px 20px 16px}
+.pop-btm .btn{width:100%;min-height:56px;font-size:17px}
+.pop-btm .btn+.btn{margin-top:8px;min-height:48px;font-size:15px}
+.pop-note{font-size:11.5px;color:var(--sub);margin-top:10px;line-height:1.5}
+.pop-foot{display:flex;justify-content:space-between;align-items:center;background:#0A1C35;padding:0 6px}
+.pop-foot button{border:0;background:none;color:rgba(255,255,255,.8);font-size:13px;font-weight:700;padding:13px 12px;cursor:pointer}
+.pop-x{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.12);color:#fff;font-size:22px;line-height:1;cursor:pointer}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(30px) scale(.94)}to{opacity:1;transform:none}}
+
 /* ===== 등장 효과 ===== */
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.hero h1 .big,.hero h1 .big:after,.pop.open,.pop-box{animation:none}}
 
 /* ===== 태블릿·PC ===== */
 @media (min-width:720px){
@@ -373,7 +402,8 @@ footer p+p{margin-top:6px}
   .hero-bg img{object-position:50% 70%}
   .hero-bg:after{background:linear-gradient(90deg,rgba(16,39,71,.85) 0%,rgba(16,39,71,.55) 30%,rgba(16,39,71,.04) 48%,rgba(16,39,71,.04) 62%,rgba(16,39,71,.4) 100%),linear-gradient(0deg,rgba(16,39,71,.45) 0%,transparent 30%)}
   .hero-copy{min-height:0}
-  .hero h1{font-size:50px}
+  .hero h1{font-size:46px}
+  .hero h1 .big{font-size:112px}
   .hero-btns{display:flex;gap:10px}
   .hero-btns .btn{padding:14px 26px}
   .hero-btns .btn-cta{display:none}
@@ -414,7 +444,7 @@ footer p+p{margin-top:6px}
     <div>
       <div class="hero-copy">
         <span class="eyebrow-pill"><b>성성호수공원 생활권</b> · 1,541세대 대단지</span>
-        <h1 class="h"><span class="sm">천안 휴먼빌 퍼스트시티</span>계약금<br><em>500만원</em> 정액제<br>전 세대 84㎡</h1>
+        <h1 class="h"><span class="sm">천안 휴먼빌 퍼스트시티</span>계약금 <span class="tag">정액제</span><br><em class="big">500<small>만원</small></em><br>전 세대 84㎡</h1>
         <p class="lead">성성호수공원 · 불당지구 생활권<br>2029년 5월 입주 예정</p>
       </div>
       <div class="trio">
@@ -454,7 +484,7 @@ footer p+p{margin-top:6px}
       <div><small>마감재</small><b>기본 제공</b><span>통상 유상 옵션<br>품목 일부</span></div>
     </div>
     <div class="basic rv">
-      <span>거실 아트월 타일</span><span>주방 엔지니어드 스톤 상판</span><span>침실 붙박이장(발코니 확장 시)</span>
+      <span>거실 아트월 타일</span><span>주방 엔지니어드 스톤 상판</span><span>침실 붙박이장(발코니 확장 시)</span><span style="background:var(--red);border-color:var(--red)">선착순 50만원 상품권 증정</span>
     </div>
     <p class="note">※ 입주자모집공고(2025.10) 및 공식 보도자료 기준이며, 기본 제공 품목은 타입에 따라 다릅니다. 현재 적용 조건은 계약 전 분양 상담을 통해 반드시 확인하시기 바랍니다.</p>
   </div>
@@ -723,6 +753,25 @@ footer p+p{margin-top:6px}
   <a href="#apply" class="btn btn-cta" data-cta="bar">관심고객 등록</a>
 </div>
 
+<div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="pop-tt">
+  <div class="pop-box">
+    <button type="button" class="pop-x" data-pop-close aria-label="닫기">×</button>
+    <div class="pop-top">
+      <span class="pop-badge">선착순 한정</span>
+      <p class="pop-amt">50<small>만원</small></p>
+      <p class="pop-tt" id="pop-tt">상품권 증정</p>
+      <p class="pop-sub">천안 휴먼빌 퍼스트시티<br>계약금 500만원 정액제 + 상품권 혜택</p>
+      <div class="pop-card" aria-hidden="true"><i>₩</i>500,000</div>
+    </div>
+    <div class="pop-btm">
+      <a href="#apply" class="btn btn-cta" data-pop-go data-cta="popup">관심고객 등록하고 혜택 받기</a>
+      <a href="tel:16684270" class="btn btn-dark" data-call>전화상담 1668-4270</a>
+      <p class="pop-note">※ 선착순 진행으로 조기 마감될 수 있으며, 지급 대상·조건은 상담 시 안내해 드립니다.</p>
+    </div>
+    <div class="pop-foot"><button type="button" data-pop-today>오늘 하루 보지 않기</button><button type="button" data-pop-close>닫기</button></div>
+  </div>
+</div>
+
 <div class="lb" id="lb" role="dialog" aria-label="이미지 크게 보기"><button type="button" aria-label="닫기">×</button><img alt=""></div>
 
 <template id="formTpl">
@@ -885,6 +934,20 @@ document.addEventListener('click',e=>{
   if(e.target.closest('#lb'))lb.classList.remove('open');
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+
+// ===== 상품권 팝업 =====
+(function(){
+  const pop=$('#pop');if(!pop)return;
+  const KEY='hm_pop_hide',today=new Date().toDateString();
+  let hidden=false;try{hidden=localStorage.getItem(KEY)===today}catch(_){}
+  const close=()=>{pop.classList.remove('open');document.body.style.overflow=''};
+  pop.querySelectorAll('[data-pop-close]').forEach(b=>b.addEventListener('click',close));
+  pop.querySelector('[data-pop-today]').addEventListener('click',()=>{try{localStorage.setItem(KEY,today)}catch(_){}close()});
+  pop.querySelector('[data-pop-go]').addEventListener('click',close);
+  pop.addEventListener('click',e=>{if(e.target===pop)close()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&pop.classList.contains('open'))close()});
+  if(!hidden)setTimeout(()=>{pop.classList.add('open');document.body.style.overflow='hidden';pop.querySelector('[data-pop-go]').focus({preventScroll:true})},700);
+})();
 
 // ===== 스크롤 등장 효과 =====
 if('IntersectionObserver' in window){
